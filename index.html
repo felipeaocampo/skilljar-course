@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    BOTTOM IS WHAT IS PUT IN SKILLJAR CODE SNIPETS!
+  </body>
+  <!-- START HTML, CSS, and Javascript for Global Custom Footer -->
+  <div class="footer-background-wrapper">
+    <div class="footer-link-tree-wrapper">
+      <div class="footer-link-column-wrapper">
+        <div class="footer-header">Header 1</div>
+        <a class="footer-link" href="">Example Link</a>
+        <a class="footer-link" href="">Example Link</a>
+        <a class="footer-link" href="">Example Link</a>
+        <a class="footer-link" href="">Example Link</a>
+      </div>
+      <div class="footer-link-column-wrapper">
+        <div class="footer-header">Header 2</div>
+        <a class="footer-link" href="">Example Link</a>
+        <a class="footer-link" href="">Example Link</a>
+        <a class="footer-link" href="">Example Link</a>
+        <a class="footer-link" href="">Example Link</a>
+      </div>
+      <div class="footer-link-column-wrapper">
+        <div class="footer-header">Header 3</div>
+        <a class="footer-link" href="">Example Link</a>
+        <a class="footer-link" href="">Example Link</a>
+        <a class="footer-link" href="">Example Link</a>
+        <a class="footer-link" href="">Example Link</a>
+      </div>
+      <div class="footer-link-column-wrapper">
+        <div class="footer-header">Header 4</div>
+        <a class="footer-link" href="">Example Link</a>
+        <a class="footer-link" href="">Example Link</a>
+        <a class="footer-link" href="">Example Link</a>
+        <a class="footer-link" href="">Example Link</a>
+      </div>
+    </div>
+  </div>
+  <style>
+    .lp-footer {
+      position: relative;
+    }
+    .footer-background-wrapper {
+      display: none;
+      position: relative;
+      width: 100%;
+      margin-top: 40px;
+      background: #fafafa; /* background color of footer */
+      justify-content: center;
+      padding: 40px 40px;
+      flex-flow: wrap-reverse;
+    }
+    .footer-link-tree-wrapper {
+      display: flex;
+      gap: 40px 75px;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      padding: 30px 40px;
+    }
+    .footer-link-column-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .footer-link-column-wrapper .footer-header {
+      color: #515f71; /* text color of footer header links */
+      font-weight: bold;
+      font-size: 17px;
+      margin-bottom: 15px;
+    }
+    .footer-link-column-wrapper .footer-link {
+      font-size: 15px;
+      color: #515f71; /* text color of footer links */
+    }
+    .footer-link-column-wrapper .footer-link:hover {
+      text-decoration: underline;
+    }
+    #ep-footer {
+      margin-top: 0px;
+    }
+    /* mobile view styling */
+    @media only screen and (max-width: 880px) {
+      .footer-background-wrapper,
+      .footer-link-tree-wrapper {
+        justify-content: flex-start;
+      }
+      .footer-link-column-wrapper .footer-header {
+        font-size: 15px;
+      }
+      .footer-link-column-wrapper .footer-link {
+        font-size: 14px;
+      }
+    }
+    @media only screen and (min-width: 875px) {
+      .catalog-filters .footer-background-wrapper {
+        padding-left: 350px;
+      }
+    }
+  </style>
+  <script>
+    $(document).ready(function () {
+      /* only add the footer on Skilljar pages, but not in courses/lessons */
+      if ($(".sj-page-curriculum").length) {
+        $(".footer-background-wrapper").css("display", "flex");
+        $("#skilljar-content").after($(".footer-background-wrapper").detach());
+      }
+    });
+  </script>
+  <script>
+    //STEP 1: RENDER FOOTER ONTO PAGE!
+    /* when the page loads, use Javascript to append the custom footer to the bottom of the page */
+    $(document).ready(function () {
+      /* only add the footer on Skilljar pages, but not in courses/lessons */
+      if ($(".sj-page-lesson").length) {
+        $(".footer-background-wrapper").css("display", "flex");
+        $("#main-container").after($(".footer-background-wrapper").detach());
+      }
+    });
+  </script>
+  <script>
+    // STEP 2. IF LESSON, HANDLE ALL STYLES
+    // // STEP a. turn main-container into display:block
+    //CONSIDER TESTING IF MAIN CONTAINER IS LESSON PAGE! OTHERWISE COULD MESS W/ STYLING OF OTHER PAGES!
+    const mainContainer = document.getElementById("main-container");
+
+    if (mainContainer.classList.contains("lesson-page")) {
+      const lessonFooter = document.getElementById("lp-footer");
+      const leftNav = document.getElementById("lp-left-nav");
+      const lessonContentWrapper = document.getElementById("lp-wrapper");
+
+      mainContainer.style.display = "block";
+      lessonFooter.style.position = "relative";
+      leftNav.style.marginBottom = "0px";
+      lessonContentWrapper.style.width = "auto";
+
+      //BIG TEST
+      lessonContentWrapper.append(leftNav);
+    }
+  </script>
+  <script>
+    //HANDLE STYLING FOR COURSE COMPLETION LESSON PAGE
+    const parentContainer = document.getElementById("lesson-main-inner");
+    const immediateParentContainer =
+      parentContainer.querySelector(".lesson-top");
+    const completionEl = immediateParentContainer.querySelector("h2");
+    if (completionEl.textContent === "Course Completion") {
+      const leftNav = document.getElementById("lp-left-nav");
+      const lessonContentWrapper = document.getElementById("lp-wrapper");
+
+      completionEl.style.display = "none";
+      immediateParentContainer.style.padding = "0";
+      immediateParentContainer.style.border = "0";
+      leftNav.style.display = "none";
+      lessonContentWrapper.style.marginLeft = "0px";
+    }
+  </script>
+  <!-- END HTML, CSS, and Javascript for Global Custom Footer -->
+  <script>
+    const fbBtn = document.querySelector("#facebook_login");
+    const googleBtn = document.querySelector("#google_login");
+
+    fbBtn.style.display = "none";
+    googleBtn.style.backgroundColor = "#3443F4";
+
+    const currentUrl = window.location.href;
+    console.log(currentUrl);
+  </script>
+</html>
