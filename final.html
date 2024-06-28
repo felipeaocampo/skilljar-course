@@ -1,3 +1,16 @@
+<script>
+  /* change the below variable value to the URL you want to redirect users to */
+  var redirectURL =
+    "https://courses.chainguard.dev/vulnerability-management-certification";
+
+  $(document).ready(function () {
+    /* only run redirect code if user is on the homepage */
+    if ($(".sj-page-catalog-root").length) {
+      window.location.replace(redirectURL);
+    }
+  });
+</script>
+<!-- END Redirect Users to Course on Homepage -->
 <!-- START GLOBAL FOOTER HTML AND CSS -->
 <div id="footer-background-wrapper">
   <div class="footer-link-tree-wrapper">
@@ -9,12 +22,6 @@
           href="https://go.chainguard.dev/48k6fF0"
           target="_blank"
           >Chainguard Images</a
-        >
-        <a
-          class="footer-link"
-          href="https://go.chainguard.dev/49dz7zW"
-          target="_blank"
-          >Chainguard Services</a
         >
       </div>
       <div class="footer-link-column-wrapper">
@@ -531,7 +538,9 @@
     );
 
     //VIDEO STYLING
-    videoContainer.style.maxWidth = "none";
+    if (videoContainer && videoContainer.style) {
+      videoContainer.style.maxWidth = "none";
+    }
 
     //COURSE DETAILS PAGE BODY STYLING
     bodyContainer.style.padding = "0";
@@ -656,8 +665,10 @@
       });
     }
 
-    courseDetailsCardLink.textContent = registerBtnText;
-    courseDetailsCardLink.setAttribute("href", registerBtnLink);
+    if (courseDetailsCardLink) {
+      courseDetailsCardLink.textContent = registerBtnText;
+      courseDetailsCardLink.setAttribute("href", registerBtnLink);
+    }
   }
 
   function desktopLessonPageStyling() {
@@ -906,6 +917,11 @@
           console.error("Failed to copy codeblock to clipboard: ", err);
         }
       });
+    });
+
+    // Makes lesson links pop up in new tab
+    lessonContentContainer.querySelectorAll("a").forEach((el) => {
+      el.setAttribute("target", "_blank");
     });
 
     //FOOTER STYLING
@@ -1280,7 +1296,10 @@
 
     //CARD VARIABLES
     const courseDetailsCard = document.querySelector(".course-details-card");
-    const courseDetailCardListItems = courseDetailsCard.querySelectorAll("li");
+    let courseDetailCardListItems;
+    if (courseDetailsCard) {
+      courseDetailCardListItems = courseDetailsCard.querySelectorAll("li");
+    }
     const checkboxIcon = document.querySelector(".checkbox-icon");
     const courseDetailsCardLink = document.querySelector(
       ".course-details-card-link"
@@ -1290,19 +1309,25 @@
     bodyMainContainer.style.display = "grid";
     bodyMainContainer.style.gridTemplateColumns =
       "minmax(100px, 760px) minmax(100px, 368px)";
-    courseDetailsCard.style.margin = "96px 0 46px 0";
+    if (courseDetailsCard) {
+      courseDetailsCard.style.margin = "96px 0 46px 0";
+    }
     bodyMainContainer.append(courseDetailsCard);
 
-    courseDetailsCardLink.textContent = btnText;
-    courseDetailsCardLink.setAttribute("href", btnHref);
+    if (courseDetailsCardLink) {
+      courseDetailsCardLink.textContent = btnText;
+      courseDetailsCardLink.setAttribute("href", btnHref);
+    }
 
     if (!initialLoadComplete) {
-      courseDetailCardListItems.forEach((li) => {
-        const iconClone = checkboxIcon.cloneNode(true);
-        iconClone.style.display = "block";
-        iconClone.style.flexShrink = "0";
-        li.prepend(iconClone);
-      });
+      if (courseDetailCardListItems) {
+        courseDetailCardListItems.forEach((li) => {
+          const iconClone = checkboxIcon.cloneNode(true);
+          iconClone.style.display = "block";
+          iconClone.style.flexShrink = "0";
+          li.prepend(iconClone);
+        });
+      }
     }
 
     bodyMainContainer.style.columnGap = "24px";
@@ -1361,13 +1386,17 @@
     tabsContainer.style.margin = "96px 0 46px 0";
     bodyMainContainer.style.paddingTop = "0";
     bodyMainContainer.style.paddingBottom = "0";
-    aboutSection.classList.add("active");
+    if (aboutSection) {
+      aboutSection.classList.add("active");
+    }
     curriculumSection.style.marginTop = "48px";
 
-    aboutSection.querySelector("h3").style.fontWeight = "600";
-    aboutSection.querySelector(".title").style.display = "none";
-    aboutSection.querySelector(".content").style.border = "0";
-    aboutSection.querySelector(".content").style.padding = "0";
+    if (aboutSection) {
+      aboutSection.querySelector("h3").style.fontWeight = "600";
+      aboutSection.querySelector(".title").style.display = "none";
+      aboutSection.querySelector(".content").style.border = "0";
+      aboutSection.querySelector(".content").style.padding = "0";
+    }
     curriculumSection.querySelector(".title").style.display = "none";
     curriculumSection.querySelector("h2").style.fontWeight = "600";
     curriculumSection.querySelector(".content").style.border = "0";
@@ -1572,7 +1601,9 @@
     bodyMainContainer.style.display = "grid";
     bodyMainContainer.style.gridTemplateColumns =
       "minmax(100px, 760px) minmax(100px, 368px)";
-    courseDetailsCard.style.margin = "96px 0 46px 0";
+    if (courseDetailsCard) {
+      courseDetailsCard.style.margin = "96px 0 46px 0";
+    }
     bodyMainContainer.append(courseDetailsCard);
 
     courseDetailsCardLink.style.display = "none";
@@ -2462,8 +2493,10 @@
     courseDetailsCard.style.justifySelf = "center";
     bodyMainContainer.append(courseDetailsCard);
 
-    courseDetailsCardLink.textContent = btnText;
-    courseDetailsCardLink.setAttribute("href", btnHref);
+    if (courseDetailsCardLink) {
+      courseDetailsCardLink.textContent = btnText;
+      courseDetailsCardLink.setAttribute("href", btnHref);
+    }
 
     if (!initialLoadComplete) {
       courseDetailCardListItems.forEach((li) => {
@@ -3270,6 +3303,11 @@
           console.error("Failed to copy codeblock to clipboard: ", err);
         }
       });
+    });
+
+    // Makes lesson links pop up in new tab
+    lessonContentContainer.querySelectorAll("a").forEach((el) => {
+      el.setAttribute("target", "_blank");
     });
 
     //FOOTER STYLING
