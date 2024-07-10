@@ -1239,9 +1239,7 @@
   }
 
   function desktopCurriculumPageNoCertificateStyling() {
-    const courseDescription = document.querySelector(
-      "meta[name='description']"
-    );
+    const courseDescription = skilljarCourse.short_description;
 
     //HEADER VARIABLES
     const headingParagraph = document.querySelector(".sj-heading-paragraph");
@@ -1383,7 +1381,7 @@
     headerTextAndImgContainer.style.gap = "24px";
 
     //RENDERING OF CURRICULUM PAGE TEXT HEADING ON LEFT
-    headingParagraph.textContent = courseDescription.content;
+    headingParagraph.textContent = courseDescription;
     headingParagraph.style.display = "block";
     headingFloaterText.style.display = "block";
     container.append(headingFloaterText, mainHeading, headingParagraph, btn);
@@ -1515,7 +1513,7 @@
       curriculumOutsideContainer.querySelector("hr").style.display = "none";
 
       // globalCurriculumSection.setAttribute('style', 'padding: 0 !important');
-      globalAboutSection.setAttribute('style', 'padding: 0 !important');
+      globalAboutSection.setAttribute("style", "padding: 0 !important");
     }
 
     ////////CURRICULUM ITSELF STYLING
@@ -1539,10 +1537,13 @@
     });
 
     // curriculumSection.setAttribute('style', 'padding: 0 !important');
-    aboutSection.setAttribute('style', 'padding: 0 !important');
+    aboutSection.setAttribute("style", "padding: 0 !important");
   }
 
   function desktopCurriculumPageYesCertificationStyling() {
+    const courseDescription = skilljarCourse.short_description;
+    console.log("courseDescription: ", courseDescription);
+
     //HEADER VARIABLES
     const headingParagraph = document.querySelector(".sj-heading-paragraph");
     const headingFloaterText = document.querySelector(".sj-floater-text");
@@ -1678,6 +1679,7 @@
     headerTextAndImgContainer.style.gap = "24px";
 
     //RENDERING OF CURRICULUM PAGE TEXT HEADING ON LEFT
+    headingParagraph.textContent = courseDescription;
     headingParagraph.style.display = "block";
     headingFloaterText.style.display = "block";
     // container.append(
