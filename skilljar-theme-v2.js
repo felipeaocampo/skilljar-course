@@ -142,8 +142,9 @@ function desktopCourseDetailsPageStyling() {
     signInBtn.style.border = "2px solid #3443F4";
     signInBtn.style.borderRadius = "999px";
     signInBtn.style.fontSize = "14px";
+    signInBtn.style.fontFamily = "Space Mono";
+    signInBtn.style.fontWeight = "700";
     signInBtn.style.lineHeight = "20px";
-    signInBtn.style.fontWeight = "500";
   }
 
   headerContainer.style.background =
