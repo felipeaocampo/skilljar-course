@@ -135,11 +135,13 @@ function desktopCourseDetailsPageStyling() {
   mobileBodyContent.style.display = "none";
   if (signInHeaderText) {
     signInHeaderText.style.display = "none";
-    signInBtn.setAttribute("style", "color:#fff !important");
+    // signInBtn.setAttribute("style", "color:#fff !important");
+    signInBtn.style.backgroundColor = "transparent";
     signInBtn.style.padding = "8px 12px";
     signInBtn.style.marginRight = "24px";
     signInBtn.style.borderColor = "#3443F4";
-    signInBtn.style.backgroundColor = "#3443F4";
+    signInBtn.style.border = "2px solid #3443F4";
+    // signInBtn.style.backgroundColor = "#3443F4";
     signInBtn.style.fontSize = "14px";
     signInBtn.style.lineHeight = "20px";
     signInBtn.style.fontWeight = "500";
