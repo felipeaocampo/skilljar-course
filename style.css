@@ -75,6 +75,16 @@ a,
 
 /* SPECIFIC STYLING */
 
+/* CUR PAGE NAV START */
+
+#header-right .login-link:hover {
+  background-color: #3443f4 !important;
+  color: #fff !important;
+  border-color: #3443f4 !important;
+}
+
+/* CUR PAGE NAV END */
+
 .global-footer-column {
   width: 270px;
   display: flex;
