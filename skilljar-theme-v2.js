@@ -147,7 +147,7 @@ function desktopCourseDetailsPageStyling() {
   }
 
   headerContainer.style.background =
-    "linear-gradient(146deg, rgba(245,246,255,1) 0%, rgba(254,231,254,1) 100%)";
+    "linear-gradient(146deg, #D0CFEE 0%, #D0CFEE 100%)";
   headerContainer.style.margin = "0";
   headerContainer.style.maxWidth = "none";
   headerContainer.style.paddingTop = "96px";

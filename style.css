@@ -77,6 +77,10 @@ a,
 
 /* CUR PAGE NAV START */
 
+#header-right .login-link {
+  transition: all 0.2s ease-in;
+}
+
 #header-right .login-link:hover {
   background-color: #3443f4 !important;
   color: #fff !important;
