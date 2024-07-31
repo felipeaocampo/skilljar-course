@@ -476,7 +476,7 @@ function desktopLessonPageStyling() {
     title.style.marginTop = "12px";
     title.style.marginBottom = "12px";
     title.style.border = "0";
-    title.style.fontFamily = "IBM Plex Mono";
+    title.style.fontFamily = "Space Mono";
     title.style.fontSize = "12px";
     title.style.textTransform = "uppercase";
     title.style.letterSpacing = ".05em";
@@ -2829,7 +2829,7 @@ function mobileLessonPageStyling() {
     title.style.marginTop = "12px";
     title.style.marginBottom = "12px";
     title.style.border = "0";
-    title.style.fontFamily = "IBM Plex Mono";
+    title.style.fontFamily = "Space Mono";
     title.style.fontSize = "12px";
     title.style.textTransform = "uppercase";
     title.style.letterSpacing = ".05em";
@@ -3020,4 +3020,4 @@ window.addEventListener("resize", () => {
   renderCourse();
 });
 
-console.log('test has run, V2')
+console.log("test has run, V2");

@@ -33,6 +33,7 @@ body {
 *,
 body {
   font-family: "Lato", sans-serif;
+  color: #14003D;
 }
 
 h1,
@@ -46,6 +47,7 @@ h4,
 h5,
 h6 {
   font-family: "Fusiona", sans-serif;
+  color: #14003D;
 }
 
 a,
