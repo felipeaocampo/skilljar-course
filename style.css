@@ -18,9 +18,9 @@ body {
 
 /* START change sign in button outline and text color */
 #header #header-right .login-link {
-  border-radius: 4px !important;
-  color: #3443f4 !important;
-  outline: solid 1px #c2c7fc !important;
+  /* border-radius: 4px !important; */
+  /* color: #3443f4 !important; */
+  /* outline: solid 1px #c2c7fc !important; */
 }
 /* END change sign in button outline and text color */
 
@@ -36,9 +36,7 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-*:not(.button) {
-  color: #14003d;
-}
+/* color: #14003d; */
 
 h1,
 .h1-style,
