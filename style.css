@@ -30,10 +30,12 @@ body {
 }
 /* END hover button text color */
 
+/* GENERAL STYLING */
+
 *,
 body {
   font-family: "Lato", sans-serif;
-  color: #14003D;
+  color: #14003d;
 }
 
 h1,
@@ -47,13 +49,23 @@ h4,
 h5,
 h6 {
   font-family: "Fusiona", sans-serif;
-  color: #14003D;
+  color: #14003d;
 }
 
 a,
 #curriculum-list-2 a {
   color: #3443f4;
 }
+
+.button {
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #3443f4;
+  border-radius: 999px;
+}
+
+/* SPECIFIC STYLING */
+
 .global-footer-column {
   width: 270px;
   display: flex;
