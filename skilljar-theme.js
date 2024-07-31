@@ -3019,3 +3019,5 @@ window.addEventListener("resize", () => {
   //BASICALLY SAME FUNCTION AS INIT!! JUST NEEDS TO MAKE SURE FUNC DOESNT GET CALLED UNNECESSARILY! SO USE THE CURRENTVIEW VAR AS REFERENCE!
   renderCourse();
 });
+
+console.log('test has run, enf of js file')

@@ -5,10 +5,12 @@ body {
 }
 /* START make header gradient color */
 #header {
-  /*background: linear-gradient(146deg, rgba(245,246,255,1) 0%, rgba(254,231,254,1) 100%); */
+  background: linear-gradient(
+    146deg,
+    rgba(245, 246, 255, 1) 0%,
+    rgba(254, 231, 254, 1) 100%
+  );
   /*box-shadow: 0 1px 12px rgba(0,0,0,.2);*/
-  background-color: red !important;
-  background: blue !important;
 }
 /* END make header gradient color */
 
