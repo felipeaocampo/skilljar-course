@@ -255,9 +255,10 @@ function desktopCourseDetailsPageStyling() {
       groupHeading.style.fontSize = "16px";
       groupHeading.style.fontWeight = "500";
       groupHeading.style.lineHeight = "125%";
-      groupHeading.style.letterSpacing = "-.16px";
+    //   groupHeading.style.letterSpacing = "-.16px";
+      groupHeading.style.fontFamily = "Fusiona";
       groupHeading.style.padding = "24px";
-      groupHeading.style.borderBottom = "1px solid #DCDCDC";
+      groupHeading.style.borderBottom = "1px solid #3443F4";
       curContainer.append(groupHeading);
     }
 
