@@ -242,7 +242,7 @@ function desktopCourseDetailsPageStyling() {
       lessonItemText.style.lineHeight = "150%";
 
       if (!isLastChild) {
-        lessonItemText.style.borderBottom = "1px solid #3443F4";
+        lessonItemText.style.borderBottom = "2px solid #3443F4";
       }
     }
 
