@@ -69,6 +69,11 @@ a,
   font-weight: 700;
 }
 
+.button span {
+  font-family: inherit;
+  color: inherit;
+}
+
 .button:hover {
   background-color: #3443f4 !important;
   color: #fff !important;
