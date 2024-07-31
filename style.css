@@ -110,7 +110,7 @@ a,
   background-color: red !important;
 } */
 #skilljar-content
-  .top-row-grey.top-row-white-v2.padding-top.padding-side.row-v2[style="background-color: rgb(208, 207, 238); margin: 0px; max-width: none; padding-top: 96px; padding-bottom: 96px; border: 0px;"]::before {
+  .top-row-grey.top-row-white-v2.padding-top.padding-side.row-v2::before {
   background-image: url(https://images.ctfassets.net/l47ir7rfykkn/5AXuu3UCcGbbKSwpUi3Cyc/2b6832efeb18fe31608e16edb6c04064/ink_trails_bacgkround_.png);
   background-size: cover;
   opacity: 0.15;
