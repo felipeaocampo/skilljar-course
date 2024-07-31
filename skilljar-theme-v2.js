@@ -3020,3 +3020,4 @@ window.addEventListener("resize", () => {
   renderCourse();
 });
 
+console.log('test has run, V2')
