@@ -7,6 +7,7 @@ body {
 #header {
   /*background: linear-gradient(146deg, rgba(245,246,255,1) 0%, rgba(254,231,254,1) 100%); */
   /*box-shadow: 0 1px 12px rgba(0,0,0,.2);*/
+  background-color: red;
 }
 /* END make header gradient color */
 
@@ -173,8 +174,9 @@ a,
 .module-list {
   margin-bottom: 48px;
 }
-.lesson-page #lp-wrapper #lesson-body .lesson-top {
+body .lesson-page #lp-wrapper #lesson-body .lesson-top {
   border: 0;
+  display: block !important;
 }
 .lesson-page #lp-wrapper #lesson-body .lesson-top h2 {
   font-weight: 600;
@@ -381,4 +383,19 @@ pre[class*="language-"] {
 }
 .curriculumItem .lesson-row:hover {
   background-color: #fff !important;
+}
+
+/* HIDES FOR CHROME, SAFARI, AND OPERA */
+sjwc-lesson-content-item pre code::-webkit-scrollbar {
+  display: none;
+}
+
+/* HIDES FOR firefox */
+sjwc-lesson-content-item pre code {
+  scrollbar-width: none;
+}
+
+/* HIDES FOR EDGE & IE */
+sjwc-lesson-content-item pre code {
+  -ms-overflow-style: none;
 }
