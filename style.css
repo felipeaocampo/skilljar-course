@@ -116,18 +116,18 @@ a,
   background-color: #f9f9f9;
 }
 .course-details-card {
-  font-family: inherit;
-  max-width: 368px;
-  margin: 20px;
-  border-radius: 8px;
-  background-color: #fff;
-  border: 2px solid #3443f4;
-  display: flex;
-  flex-direction: column;
-  color: inherit;
-  align-self: start;
-  position: sticky;
-  top: 100px;
+  font-family: inherit !important;
+  max-width: 368px !important;
+  margin: 20px !important;
+  border-radius: 8px !important;
+  background-color: #fff !important;
+  border: 2px solid #3443f4 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  color: inherit !important;
+  align-self: start !important;
+  position: sticky !important;
+  top: 100px !important;
 }
 .course-details-card-header {
   font-size: 16px;
