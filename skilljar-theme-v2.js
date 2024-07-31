@@ -224,7 +224,7 @@ function desktopCourseDetailsPageStyling() {
     curContainer.append(startingGroup);
 
     function styleGroupContainer(container) {
-      container.style.border = "1px solid #DCDCDC";
+      container.style.border = "2px solid #3443F4";
       container.style.borderRadius = "8px";
       container.style.marginBottom = "48px";
       container.style.padding = "0";
@@ -255,10 +255,10 @@ function desktopCourseDetailsPageStyling() {
       groupHeading.style.fontSize = "16px";
       groupHeading.style.fontWeight = "500";
       groupHeading.style.lineHeight = "125%";
-    //   groupHeading.style.letterSpacing = "-.16px";
+      //   groupHeading.style.letterSpacing = "-.16px";
       groupHeading.style.fontFamily = "Fusiona";
       groupHeading.style.padding = "24px";
-      groupHeading.style.borderBottom = "1px solid #3443F4";
+      groupHeading.style.borderBottom = "2px solid #3443F4";
       curContainer.append(groupHeading);
     }
 
