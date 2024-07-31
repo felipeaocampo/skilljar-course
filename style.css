@@ -34,6 +34,9 @@ body {
 
 * {
   font-family: "Lato", sans-serif;
+}
+
+*:not(.button) {
   color: #14003d;
 }
 
@@ -67,6 +70,7 @@ a,
 .button:hover {
   background-color: #3443f4 !important;
   color: #fff !important;
+  border-color: #3443f4 !important;
 }
 
 /* SPECIFIC STYLING */
