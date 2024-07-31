@@ -36,7 +36,9 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-/* color: #14003d; */
+body {
+  color: #14003d;
+}
 
 h1,
 .h1-style,
