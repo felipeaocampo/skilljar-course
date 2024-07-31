@@ -63,6 +63,11 @@ a,
   border-radius: 999px;
 }
 
+.button:hover {
+  background-color: #3443f4 !important;
+  color: #fff !important;
+}
+
 /* SPECIFIC STYLING */
 
 .global-footer-column {
