@@ -54,6 +54,10 @@ h6 {
   color: #14003d;
 }
 
+span {
+  font-family: inherit;
+}
+
 a,
 #curriculum-list-2 a {
   color: #3443f4;
@@ -86,6 +90,8 @@ a,
 
 #header-right .login-link {
   transition: all 0.2s ease-in;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 #header-right .login-link:hover {
