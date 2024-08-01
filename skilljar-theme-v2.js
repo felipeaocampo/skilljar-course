@@ -826,6 +826,8 @@ function desktopSignUpPageStyling() {
   signUpBottomBtn.style.width = "368px";
   signUpBottomBtn.style.height = "48px";
   signUpBottomBtn.style.fontSize = "16px";
+  signUpBottomBtn.style.fontFamily = "Space Mono";
+  signUpBottomBtn.style.color = "#14003d";
   signUpBottomBtn.style.backgroundColor = "transparent";
   signUpBottomBtn.style.border = "2px solid #3443f4";
   signUpBottomBtn.style.borderRadius = "999px";

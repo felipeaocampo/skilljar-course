@@ -134,17 +134,17 @@ label {
 
 /* BANNER W/ BACKGROUND END*/
 
-/* LOGIN BTN STYLE START*/
+/* LOGIN/SIGN UP BTNS STYLE START*/
 
-#button-sign-in {
+#button-sign-in, #button-sign-up {
   transition: all 0.2s ease-in;
 }
-#button-sign-in:hover {
+#button-sign-in:hover, #button-sign-up:hover {
   background-color: #3443f4 !important;
   color: #fff !important;
 }
 
-/* LOGIN BTN STYLE END*/
+/* LOGIN/SIGN UP BTNS STYLE END*/
 
 .global-footer-column {
   width: 270px;
