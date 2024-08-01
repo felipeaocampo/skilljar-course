@@ -622,7 +622,7 @@ function desktopLoginPageStyling() {
   tabs.style.borderRadius = "100px";
   tabs.style.display = "flex";
   tabs.style.padding = "4px";
-  loginTab.querySelector("span span").textContent = "Log in";
+  loginTab.querySelector("span span").textContent = "Log In";
   loginTab.style.border = "0";
   loginTab.style.display = "flex";
   loginTab.style.padding = "8px 16px";
@@ -635,7 +635,7 @@ function desktopLoginPageStyling() {
   loginTab.style.fontSize = "18px";
   loginTab.style.lineHeight = "24px";
   // loginTab.style.borderRadius = "100px";
-  signInTab.querySelector("span").textContent = "Sign up";
+  signInTab.querySelector("span").textContent = "Sign Up";
   signInTab.style.display = "flex";
   signInTab.style.alignItems = "center";
   signInTab.style.padding = "8px 16px";
@@ -668,7 +668,7 @@ function desktopLoginPageStyling() {
   passwordInput.style.fontSize = "14px";
   passwordInput.style.lineHeight = "24px";
   passwordInput.style.marginBottom = "24px";
-  loginBottomBtn.textContent = "Log in";
+  loginBottomBtn.textContent = "Log In";
   loginBottomBtn.style.fontFamily = "Space Mono";
   loginBottomBtn.style.color = "#14003d";
   loginBottomBtn.style.width = "368px";
@@ -680,11 +680,12 @@ function desktopLoginPageStyling() {
   loginBottomBtn.style.marginBottom = "2px";
   //forgotPasswordText.style.height = '48px';
   forgotPasswordText.style.fontSize = "16px";
+  forgotPasswordText.style.fontFamily = "Space Mono";
   forgotPasswordText.style.marginBottom = "2px";
   loginBottomBtnAndForgotPassBtn.style.marginBottom = "24px";
 
   //STYLING OF SIDE 'SIGN IN W/' GOOGLE ELS
-  orSignInWithTextEl.textContent = "or log in with";
+  orSignInWithTextEl.textContent = "Or Log In With";
   googleBtn.textContent = "Continue with Google";
 
   fbBtn.style.display = "none";
@@ -763,29 +764,31 @@ function desktopSignUpPageStyling() {
 
   //////STYLE THE LOGIN/SIGN UP TABS
   signUpSignInContainer.style.display = "flex";
-  tabs.style.backgroundColor = "#F3F3F3";
+  // tabs.style.backgroundColor = "#F3F3F3";
   tabs.style.borderRadius = "100px";
   tabs.style.display = "flex";
   tabs.style.padding = "4px";
-  loginTabText.querySelector("span").textContent = "Log in";
+  loginTab.querySelector("span span").textContent = "Log In";
   loginTab.style.border = "0";
   loginTab.style.display = "flex";
   loginTab.style.padding = "8px 16px";
   loginTab.style.alignItems = "center";
-  loginTabText.style.color = "#8C8C8C";
-  loginTabText.style.fontWeight = "500";
-  loginTabText.style.fontSize = "16px";
-  loginTabText.style.lineHeight = "24px";
-  loginTab.style.borderRadius = "100px";
+  // loginTab.style.backgroundColor = "#3443F4";
+  loginTab.style.textDecoration = "underline";
+  loginTab.style.fontFamily = "Space Mono";
+  loginTab.style.color = "#3443f4";
+  loginTab.style.fontWeight = "700";
+  loginTab.style.fontSize = "18px";
+  loginTab.style.lineHeight = "24px";
+  // loginTab.style.borderRadius = "100px";
+  signInTab.querySelector("span").textContent = "Sign Up";
   signInTab.style.display = "flex";
   signInTab.style.alignItems = "center";
   signInTab.style.padding = "8px 16px";
-  signInTab.style.backgroundColor = "#3443F4";
-  signInTab.style.borderRadius = "100px";
-  signInTabText.textContent = "Sign up";
-  signInTabText.style.color = "#fff";
-  signInTabText.style.fontWeight = "500";
-  signInTabText.style.fontSize = "16px";
+  signInTabText.style.color = "rgba(52, 67, 244, .4)";
+  loginTab.style.fontFamily = "Space Mono";
+  signInTabText.style.fontWeight = "700";
+  signInTabText.style.fontSize = "18px";
   signInTabText.style.lineHeight = "24px";
 
   //////STYLE THE SIGNUP TEXT CONTENT BOX
