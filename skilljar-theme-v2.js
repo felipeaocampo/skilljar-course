@@ -1160,7 +1160,7 @@ function desktopCurriculumPageNoCertificateStyling() {
     curriculumOutsideContainer.querySelector("h2").style.display = "none";
     curriculumOutsideContainer.querySelector("hr").style.display = "none";
 
-    // globalCurriculumSection.setAttribute('style', 'padding: 0 !important');
+    globalCurriculumSection.setAttribute("style", "padding: 0 !important");
     globalAboutSection.setAttribute("style", "padding: 0 !important");
   }
 
