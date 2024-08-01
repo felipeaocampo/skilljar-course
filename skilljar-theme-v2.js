@@ -1257,6 +1257,7 @@ function desktopCurriculumPageYesCertificationStyling() {
 
   //STYLING OF CURRICULUM PAGE GRID AND DETAILS CARD
   bodyMainContainer.style.display = "grid";
+  bodyMainContainer.style.marginTop = "96px";
   bodyMainContainer.style.gridTemplateColumns =
     "minmax(100px, 760px) minmax(100px, 368px)";
   if (courseDetailsCard) {
@@ -1340,7 +1341,7 @@ function desktopCurriculumPageYesCertificationStyling() {
 
   ///////CURRICULUM PAGE BODY STYLING
   tabsContainer.append(curriculumSection);
-  tabsContainer.style.margin = "96px 0 46px 0";
+  tabsContainer.style.margin = "0 0 46px 0";
   bodyMainContainer.style.paddingTop = "0";
   bodyMainContainer.style.paddingBottom = "0";
   aboutSection.classList.add("active");
