@@ -669,7 +669,7 @@ function desktopLoginPageStyling() {
   passwordInput.style.lineHeight = "24px";
   passwordInput.style.marginBottom = "24px";
   loginBottomBtn.textContent = "Log in";
-  loginBottomBtn.color = "#14003d";
+  loginBottomBtn.style.color = "#14003d";
   loginBottomBtn.style.width = "368px";
   loginBottomBtn.style.height = "48px";
   loginBottomBtn.style.fontSize = "16px";
