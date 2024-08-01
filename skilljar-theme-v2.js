@@ -618,7 +618,7 @@ function desktopLoginPageStyling() {
 
   //////STYLE THE LOGIN/SIGN UP TABS
   signUpSignInContainer.style.display = "flex";
-  tabs.style.backgroundColor = "#F3F3F3";
+  // tabs.style.backgroundColor = "#F3F3F3";
   tabs.style.borderRadius = "100px";
   tabs.style.display = "flex";
   tabs.style.padding = "4px";
@@ -627,17 +627,18 @@ function desktopLoginPageStyling() {
   loginTab.style.display = "flex";
   loginTab.style.padding = "8px 16px";
   loginTab.style.alignItems = "center";
-  loginTab.style.backgroundColor = "#3443F4";
-  loginTab.style.color = "#fff";
-  loginTab.style.fontWeight = "500";
-  loginTab.style.fontSize = "16px";
+  // loginTab.style.backgroundColor = "#3443F4";
+  loginTab.style.fontFamily = "Space Mono";
+  loginTab.style.color = "#3443f4";
+  loginTab.style.fontWeight = "700";
+  loginTab.style.fontSize = "20px";
   loginTab.style.lineHeight = "24px";
-  loginTab.style.borderRadius = "100px";
+  // loginTab.style.borderRadius = "100px";
   signInTab.querySelector("span").textContent = "Sign up";
   signInTab.style.display = "flex";
   signInTab.style.alignItems = "center";
   signInTab.style.padding = "8px 16px";
-  signInTabText.style.color = "#8C8C8C";
+  signInTabText.style.color = "rgba(52, 67, 244, .4)";
   signInTabText.style.fontWeight = "500";
   signInTabText.style.fontSize = "16px";
   signInTabText.style.lineHeight = "24px";
