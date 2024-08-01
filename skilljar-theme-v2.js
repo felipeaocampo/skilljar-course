@@ -1160,7 +1160,10 @@ function desktopCurriculumPageNoCertificateStyling() {
     curriculumOutsideContainer.querySelector("h2").style.display = "none";
     curriculumOutsideContainer.querySelector("hr").style.display = "none";
 
-    globalCurriculumSection.setAttribute("style", "padding: 0 !important");
+    globalCurriculumSection.setAttribute(
+      "style",
+      "padding: 0 !important; background-color: red;"
+    );
     globalAboutSection.setAttribute("style", "padding: 0 !important");
   }
 
@@ -1184,7 +1187,10 @@ function desktopCurriculumPageNoCertificateStyling() {
     titleEl.style.transform = "translateY(2px)";
   });
 
-  // curriculumSection.setAttribute('style', 'padding: 0 !important');
+  curriculumSection.setAttribute(
+    "style",
+    "padding: 0 !important; background-color: red;"
+  );
   aboutSection.setAttribute("style", "padding: 0 !important");
 }
 
