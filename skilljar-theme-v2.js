@@ -809,14 +809,14 @@ function desktopSignUpPageStyling() {
   orSignInWithText.style.fontWeight = "500";
   orSignInWithText.style.fontSize = "16px";
   orSignInWithText.style.lineHeight = "20px";
-  firstNameLabel.textContent = "First name";
-  lastNameLabel.textContent = "Last name";
-  loginLabel.textContent = "Work email";
+  firstNameLabel.textContent = "First Name";
+  lastNameLabel.textContent = "Last Name";
+  loginLabel.textContent = "Work Email";
   loginInput.style.borderRadius = "4px";
   loginInput.style.borderColor = "#DCDCDC";
   loginInput.style.padding = "12px";
   loginInput.style.lineHeight = "24px";
-  loginInput.setAttribute("placeholder", "Work email");
+  loginInput.setAttribute("placeholder", "Work Email");
   passwordInput.style.borderRadius = "4px";
   passwordInput.style.borderColor = "#DCDCDC";
   passwordInput.style.padding = "12px";
@@ -826,6 +826,9 @@ function desktopSignUpPageStyling() {
   signUpBottomBtn.style.width = "368px";
   signUpBottomBtn.style.height = "48px";
   signUpBottomBtn.style.fontSize = "16px";
+  signUpBottomBtn.style.backgroundColor = "transparent";
+  signUpBottomBtn.style.border = "2px solid #3443f4";
+  signUpBottomBtn.style.borderRadius = "999px";
 
   const signUpBottomBtnParent = signUpBottomBtn?.closest(".text-center");
   if (signUpBottomBtnParent) {
@@ -836,11 +839,12 @@ function desktopSignUpPageStyling() {
   termsAndServicesText.style.transform = "translateX(-13px)";
 
   //STYLING OF RIGHT SIDE, OR SIGN UP WITH GOOGLE, TEXT AND BTN
-  orSignInWithTextSpan.textContent = "or sign up with";
+  orSignInWithTextSpan.textContent = "Or Sign Up With";
   googleBtn.textContent = "Continue with Google";
 
   fbBtn.style.display = "none";
-  googleBtn.style.backgroundColor = "#3443F4";
+  googleBtn.style.background =
+    "linear-gradient(225deg, #7545FB 0%, #7AF0FE 100%)";
   googleBtn.style.width = "auto";
   googleBtn.style.textAlign = "center";
   loginContent.style.border = "0";
@@ -851,6 +855,7 @@ function desktopSignUpPageStyling() {
     label.style.marginBottom = "12px";
     label.style.fontWeight = "500";
     label.style.fontSize = "16px";
+    label.style.fontFamily = "Fusiona";
     label.style.lineHeight = "20px";
 
     //            console.log(label.getAttribute('for'));
