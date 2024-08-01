@@ -628,6 +628,7 @@ function desktopLoginPageStyling() {
   loginTab.style.padding = "8px 16px";
   loginTab.style.alignItems = "center";
   // loginTab.style.backgroundColor = "#3443F4";
+  loginTab.style.textDecoration = "underline";
   loginTab.style.fontFamily = "Space Mono";
   loginTab.style.color = "#3443f4";
   loginTab.style.fontWeight = "700";
