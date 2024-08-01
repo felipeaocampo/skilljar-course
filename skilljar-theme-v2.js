@@ -632,7 +632,7 @@ function desktopLoginPageStyling() {
   loginTab.style.fontFamily = "Space Mono";
   loginTab.style.color = "#3443f4";
   loginTab.style.fontWeight = "700";
-  loginTab.style.fontSize = "20px";
+  loginTab.style.fontSize = "18px";
   loginTab.style.lineHeight = "24px";
   // loginTab.style.borderRadius = "100px";
   signInTab.querySelector("span").textContent = "Sign up";
@@ -640,8 +640,9 @@ function desktopLoginPageStyling() {
   signInTab.style.alignItems = "center";
   signInTab.style.padding = "8px 16px";
   signInTabText.style.color = "rgba(52, 67, 244, .4)";
-  signInTabText.style.fontWeight = "500";
-  signInTabText.style.fontSize = "16px";
+  loginTab.style.fontFamily = "Space Mono";
+  signInTabText.style.fontWeight = "700";
+  signInTabText.style.fontSize = "18px";
   signInTabText.style.lineHeight = "24px";
 
   //////STYLE THE LOGIN TEXT CONTENT BOX
@@ -657,18 +658,23 @@ function desktopLoginPageStyling() {
   longInNote.style.display = "none";
   orSignInWithContainer.style.paddingBottom = "0";
   loginInput.style.borderRadius = "4px";
-  loginInput.style.borderColor = "#DCDCDC";
-  loginInput.style.padding = "12px";
+  loginInput.style.border = "2px solid #3443f4";
+  loginInput.style.padding = "20px 15px";
+  loginInput.style.fontSize = "14px";
   loginInput.style.lineHeight = "24px";
   passwordInput.style.borderRadius = "4px";
-  passwordInput.style.borderColor = "#DCDCDC";
-  passwordInput.style.padding = "12px";
+  passwordInput.style.border = "2px solid #3443f4";
+  passwordInput.style.padding = "20px 15px";
+  passwordInput.style.fontSize = "14px";
   passwordInput.style.lineHeight = "24px";
   passwordInput.style.marginBottom = "24px";
   loginBottomBtn.textContent = "Log in";
+  loginBottomBtn.color = "#14003d";
   loginBottomBtn.style.width = "368px";
   loginBottomBtn.style.height = "48px";
   loginBottomBtn.style.fontSize = "16px";
+  loginBottomBtn.style.backgroundColor = "transparent";
+  loginBottomBtn.style.border = "2px solid #3443f4";
   loginBottomBtn.style.marginBottom = "2px";
   //forgotPasswordText.style.height = '48px';
   forgotPasswordText.style.fontSize = "16px";
