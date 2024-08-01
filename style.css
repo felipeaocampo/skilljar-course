@@ -63,6 +63,10 @@ a,
   color: #3443f4;
 }
 
+label {
+  color: #14003d;
+}
+
 .button {
   color: #14003d;
   background-color: transparent;

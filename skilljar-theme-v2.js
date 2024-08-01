@@ -611,7 +611,7 @@ function desktopLoginPageStyling() {
   const footerCols = footerContainer.querySelectorAll(".global-footer-column");
 
   termsAndServicesText.style.maxWidth = "368px";
-  termsAndServicesText.style.color = "#545454";
+  // termsAndServicesText.style.color = "#545454";
   termsAndServicesText.style.fontSize = "14px";
 
   loginForm.append(termsAndServicesText);
@@ -675,6 +675,7 @@ function desktopLoginPageStyling() {
   loginBottomBtn.style.fontSize = "16px";
   loginBottomBtn.style.backgroundColor = "transparent";
   loginBottomBtn.style.border = "2px solid #3443f4";
+  loginBottomBtn.style.borderRadius = "999px";
   loginBottomBtn.style.marginBottom = "2px";
   //forgotPasswordText.style.height = '48px';
   forgotPasswordText.style.fontSize = "16px";
@@ -686,7 +687,8 @@ function desktopLoginPageStyling() {
   googleBtn.textContent = "Continue with Google";
 
   fbBtn.style.display = "none";
-  googleBtn.style.backgroundColor = "#3443F4";
+  googleBtn.style.background =
+    "background: linear-gradient(225deg, #7545FB 0%, #7AF0FE 100%)";
   googleBtn.style.width = "auto";
   googleBtn.style.textAlign = "center";
   loginContent.style.border = "0";
