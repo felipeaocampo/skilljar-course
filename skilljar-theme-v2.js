@@ -688,7 +688,7 @@ function desktopLoginPageStyling() {
 
   fbBtn.style.display = "none";
   googleBtn.style.background =
-    "background: linear-gradient(225deg, #7545FB 0%, #7AF0FE 100%)";
+    "linear-gradient(225deg, #7545FB 0%, #7AF0FE 100%)";
   googleBtn.style.width = "auto";
   googleBtn.style.textAlign = "center";
   loginContent.style.border = "0";
