@@ -1162,7 +1162,7 @@ function desktopCurriculumPageNoCertificateStyling() {
 
     globalCurriculumSection.setAttribute(
       "style",
-      "padding: 0 !important; background-color: red;"
+      "padding: 0 !important; margin-top: 48px !important;"
     );
     globalAboutSection.setAttribute("style", "padding: 0 !important");
   }
@@ -1189,7 +1189,7 @@ function desktopCurriculumPageNoCertificateStyling() {
 
   curriculumSection.setAttribute(
     "style",
-    "padding: 0 !important; background-color: red;"
+    "padding: 0 !important; margin-top: 48px !important;"
   );
   aboutSection.setAttribute("style", "padding: 0 !important");
 }
