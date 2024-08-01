@@ -863,7 +863,7 @@ function desktopSignUpPageStyling() {
     //            console.log(label.getAttribute('for'));
     if (label.getAttribute("for") === "id_password2") {
       label.querySelector(".input-label-text span").textContent =
-        "Password confirm";
+        "Password Confirm";
     }
   });
 
@@ -996,8 +996,7 @@ function desktopCurriculumPageNoCertificateStyling() {
   //STYLING OF CURRICULUM PAGE TEXT HEADER BACKGROUND CONTAINER
   curriculumPageHeader.style.maxWidth = "none";
   curriculumPageHeader.style.padding = "0";
-  curriculumPageHeader.style.backgroundImage =
-    "linear-gradient(315deg,#fde1fe,#f5f6fe 72%)";
+  curriculumPageHeader.style.backgroundColor = "#D0CFEE";
   curriculumPageHeader.style.border = "0";
 
   //STYLING OF CURRICULUM PAGE TWO HEADER CONTAINERS

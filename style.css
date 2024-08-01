@@ -109,6 +109,7 @@ label {
 
 /* BANNER W/ BACKGROUND START*/
 
+/* course details pg */
 #skilljar-content
   .top-row-grey.top-row-white-v2.padding-top.padding-side.row-v2[style="background-color: rgb(208, 207, 238); margin: 0px; max-width: none; padding-top: 96px; padding-bottom: 96px; border: 0px;"] {
   position: relative;
@@ -124,22 +125,33 @@ label {
   position: absolute;
   inset: 0;
 }
-/* #skilljar-content
-  .top-row-grey.top-row-white-v2.padding-top.padding-side.row-v2::before {
+
+/* curriculum pg */
+#skilljar-content
+  .top-row-grey.top-row-white-v2.padding-top.padding-side.row-v2[style="background-color: rgb(208, 207, 238); margin: 0px; max-width: none; padding-top: 96px; padding-bottom: 96px; border: 0px;"] {
+  position: relative;
+}
+#skilljar-content
+  .top-row-grey.top-row-white-v2.padding-top.padding-side.row-v2[style="background-color: rgb(208, 207, 238); margin: 0px; max-width: none; padding-top: 96px; padding-bottom: 96px; border: 0px;"]::before {
   background-image: url(https://images.ctfassets.net/l47ir7rfykkn/5AXuu3UCcGbbKSwpUi3Cyc/2b6832efeb18fe31608e16edb6c04064/ink_trails_bacgkround_.png);
   background-size: cover;
   opacity: 0.15;
   mix-blend-mode: multiply;
-} */
+  content: "";
+  position: absolute;
+  inset: 0;
+}
 
 /* BANNER W/ BACKGROUND END*/
 
 /* LOGIN/SIGN UP BTNS STYLE START*/
 
-#button-sign-in, #button-sign-up {
+#button-sign-in,
+#button-sign-up {
   transition: all 0.2s ease-in;
 }
-#button-sign-in:hover, #button-sign-up:hover {
+#button-sign-in:hover,
+#button-sign-up:hover {
   background-color: #3443f4 !important;
   color: #fff !important;
 }
