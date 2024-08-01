@@ -1071,7 +1071,7 @@ function desktopCurriculumPageNoCertificateStyling() {
     curContainer.append(startingGroup);
 
     function styleGroupContainer(container) {
-      container.style.border = "1px solid #DCDCDC";
+      container.style.border = "2px solid #3443f4";
       container.style.borderRadius = "8px";
       container.style.marginBottom = "48px";
       container.style.padding = "0";
@@ -1083,7 +1083,7 @@ function desktopCurriculumPageNoCertificateStyling() {
       lessonEl.style.fontWeight = "400";
       lessonEl.style.lineHeight = "150%";
       if (!isLastChild) {
-        lessonEl.style.borderBottom = "1px solid #DCDCDC";
+        lessonEl.style.borderBottom = "2px solid #3443f4";
       }
     }
 
@@ -1091,7 +1091,7 @@ function desktopCurriculumPageNoCertificateStyling() {
       // console.log('groupHeading: ', groupHeading)
 
       groupHeadingContainer.style.padding = "24px";
-      groupHeadingContainer.style.borderBottom = "1px solid #DCDCDC";
+      groupHeadingContainer.style.borderBottom = "2px solid #3443f4";
 
       //get actual group heading
       const groupHeading =
@@ -1102,6 +1102,7 @@ function desktopCurriculumPageNoCertificateStyling() {
           ? "Introduction"
           : groupHeading?.textContent?.trim();
       groupHeading.style.fontSize = "16px";
+      groupHeading.style.fontFamily = "Fusiona";
       groupHeading.style.fontWeight = "500";
       groupHeading.style.lineHeight = "125%";
       groupHeading.style.letterSpacing = "-.16px";
