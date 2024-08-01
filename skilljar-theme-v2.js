@@ -1373,7 +1373,7 @@ function desktopCurriculumPageYesCertificationStyling() {
     curContainer.append(startingGroup);
 
     function styleGroupContainer(container) {
-      container.style.border = "1px solid #DCDCDC";
+      container.style.border = "2px solid #3443f4";
       container.style.borderRadius = "8px";
       container.style.marginBottom = "48px";
       container.style.padding = "0";
