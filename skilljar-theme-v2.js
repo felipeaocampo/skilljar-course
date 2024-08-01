@@ -1385,7 +1385,7 @@ function desktopCurriculumPageYesCertificationStyling() {
       lessonEl.style.fontWeight = "400";
       lessonEl.style.lineHeight = "150%";
       if (!isLastChild) {
-        lessonEl.style.borderBottom = "1px solid #DCDCDC";
+        lessonEl.style.borderBottom = "2px solid #3443f4";
       }
     }
 
@@ -1393,7 +1393,7 @@ function desktopCurriculumPageYesCertificationStyling() {
       // console.log('groupHeading: ', groupHeading)
 
       groupHeadingContainer.style.padding = "24px";
-      groupHeadingContainer.style.borderBottom = "1px solid #DCDCDC";
+      groupHeadingContainer.style.borderBottom = "2px solid #3443f4";
 
       //get actual group heading
       const groupHeading =
