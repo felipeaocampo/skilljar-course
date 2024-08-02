@@ -562,7 +562,7 @@ function desktopLessonPageStyling() {
   });
 
   //LESSON CONTENT FOOTER
-  const prevBtn = document.querySelector(".button-prev-title");
+  const prevBtn = document.querySelector(".button-prev-title span");
   prevBtn.style.color = "#14003d";
 
   //FOOTER STYLING
