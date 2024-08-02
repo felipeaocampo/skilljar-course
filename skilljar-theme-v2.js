@@ -456,7 +456,7 @@ function desktopLessonPageStyling() {
     const pageIcon = link.querySelector(".type-icon");
     const lessonLinkContainer = link.querySelector(".lesson-row");
 
-    link.style.color = "#1C1C1C";
+    link.style.color = "#14003d";
     link.style.cursor = "pointer";
     pageIcon.style.display = "none";
     lessonLinkContainer.style.display = "flex";
@@ -479,9 +479,8 @@ function desktopLessonPageStyling() {
     title.style.marginBottom = "12px";
     title.style.border = "0";
     title.style.fontFamily = "Fusiona";
-    title.style.fontSize = "12px";
-    title.style.textTransform = "uppercase";
-    title.style.letterSpacing = ".05em";
+    title.style.fontSize = "16px";
+    title.style.fontWeight = "700";
   });
 
   // const copyIcon = document.querySelector('.checkbox-icon');

@@ -298,7 +298,7 @@ body .lesson-page #lp-wrapper #lesson-body .lesson-top {
   font-weight: 600;
   font-size: 36px;
   line-height: 43.2px;
-  letter-spacing: -0.02em;
+  color: #14003d;
 }
 .content-img-outer-container {
   display: flex;
@@ -353,7 +353,8 @@ pre[class*="language-"] {
 
 .lp-color-scheme-light .lp-left-nav .course-title,
 .lp-color-scheme-light .lp-left-nav .section-title,
-.lesson-page #lp-wrapper #lesson-body {
+.lesson-page #lp-wrapper #lesson-body,
+.course-text-content {
   color: #14003d !important;
 }
 
