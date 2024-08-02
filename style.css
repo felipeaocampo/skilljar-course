@@ -349,6 +349,14 @@ pre[class*="language-"] {
   background: none;
 }
 
+/* LESSON PAGE STYLING START */
+
+.sj-page-lesson {
+  color: #14003d !important;
+}
+
+/* LESSON PAGE STYLING END */
+
 /* /////// STYLING OF QUIZ PAGES  ///////// */
 .course-scrollable-content.course-text-content.quiz .start-quiz {
   border: 1px solid #dcdcdc;

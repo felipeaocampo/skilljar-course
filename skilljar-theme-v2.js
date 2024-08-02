@@ -478,7 +478,7 @@ function desktopLessonPageStyling() {
     title.style.marginTop = "12px";
     title.style.marginBottom = "12px";
     title.style.border = "0";
-    title.style.fontFamily = "Space Mono";
+    title.style.fontFamily = "Fusiona";
     title.style.fontSize = "12px";
     title.style.textTransform = "uppercase";
     title.style.letterSpacing = ".05em";
