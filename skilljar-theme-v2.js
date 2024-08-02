@@ -561,6 +561,10 @@ function desktopLessonPageStyling() {
     el.setAttribute("target", "_blank");
   });
 
+  //LESSON CONTENT FOOTER
+  const prevBtn = document.querySelector(".button-prev-title");
+  prevBtn.style.color = "#14003d";
+
   //FOOTER STYLING
   footerContainer.style.paddingLeft = "40px";
   footerContainer.style.paddingRight = "40px";
