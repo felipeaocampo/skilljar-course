@@ -351,8 +351,15 @@ pre[class*="language-"] {
 
 /* LESSON PAGE STYLING START */
 
-.sj-page-lesson {
+.lp-color-scheme-light .lp-left-nav .course-title,
+.lp-color-scheme-light .lp-left-nav .section-title,
+.lesson-page #lp-wrapper #lesson-body {
   color: #14003d !important;
+}
+
+.lp-color-scheme-light .lp-left-nav .course-title,
+.lp-color-scheme-light .lp-left-nav .section-title {
+  font-family: "Fusiona";
 }
 
 /* LESSON PAGE STYLING END */
