@@ -76,6 +76,7 @@ label {
   font-family: "Space Mono";
   font-size: 14px;
   font-weight: 700;
+  padding: 10px 20px;
 }
 
 .button span {
@@ -368,7 +369,7 @@ pre[class*="language-"] {
   color: #3443f4;
 }
 
-.lp-footer .left .prev-lesson-button .fa.fa-angle-left {
+#lp-footer .left .prev-lesson-button .button-content .fa.fa-angle-left {
   display: none;
 }
 
