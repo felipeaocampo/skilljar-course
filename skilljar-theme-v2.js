@@ -563,7 +563,9 @@ function desktopLessonPageStyling() {
 
   //LESSON CONTENT FOOTER
   const prevBtn = document.querySelector(".button-prev-title span");
-  prevBtn.style.color = "#14003d";
+  if (prevBtn) {
+    prevBtn.style.color = "#14003d";
+  }
 
   //FOOTER STYLING
   footerContainer.style.paddingLeft = "40px";
