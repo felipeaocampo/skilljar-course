@@ -67,7 +67,8 @@ label {
   color: #14003d;
 }
 
-.button {
+.button,
+.button-prev-title {
   color: #14003d;
   background-color: transparent;
   border: 2px solid #3443f4;
@@ -365,6 +366,10 @@ pre[class*="language-"] {
 
 .bullet .fa.fa-check-circle {
   color: #3443f4;
+}
+
+.lp-footer .left .prev-lesson-button .fa.fa-angle-left {
+  display: none;
 }
 
 /* LESSON PAGE STYLING END */
