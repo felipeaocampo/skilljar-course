@@ -363,6 +363,10 @@ pre[class*="language-"] {
   font-family: "Fusiona";
 }
 
+.bullet .fa.fa-check-circle {
+  color: #3443f4;
+}
+
 /* LESSON PAGE STYLING END */
 
 /* /////// STYLING OF QUIZ PAGES  ///////// */
