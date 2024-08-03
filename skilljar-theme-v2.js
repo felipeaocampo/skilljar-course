@@ -315,6 +315,8 @@ function desktopCourseDetailsPageStyling() {
 }
 
 function desktopLessonPageStyling() {
+  const logoImg = document.querySelector(".header-center-img");
+
   const leftNav = document.getElementById("lp-left-nav");
   const mainLessonContentContainer = document.getElementById("lp-wrapper");
   const mainLessonContentSubContainer = document.getElementById("lp-content");
@@ -344,6 +346,9 @@ function desktopLessonPageStyling() {
   //FOOTER VARS
   const footerContainer = document.getElementById("footer-background-wrapper");
   const footerCols = footerContainer.querySelectorAll(".global-footer-column");
+
+  ///////STYLE LOGO
+  logoImg.style.height = "24px";
 
   lessonInnerContainer.style.maxWidth = "712px";
   lessonInnerContainer.style.margin = "0 auto";
@@ -576,6 +581,8 @@ function desktopLessonPageStyling() {
 }
 
 function desktopLoginPageStyling() {
+  const logoImg = document.querySelector(".header-center-img");
+
   const fbBtn = document.getElementById("facebook_login");
   const googleBtn = document.getElementById("google_login");
   const loginContent = document.getElementById("login-content");
@@ -614,6 +621,9 @@ function desktopLoginPageStyling() {
   //FOOTER VARS
   const footerContainer = document.getElementById("footer-background-wrapper");
   const footerCols = footerContainer.querySelectorAll(".global-footer-column");
+
+  ///////STYLE LOGO
+  logoImg.style.height = "24px";
 
   termsAndServicesText.style.maxWidth = "368px";
   // termsAndServicesText.style.color = "#545454";
@@ -765,7 +775,7 @@ function desktopSignUpPageStyling() {
   signUpForm.append(termsAndServicesText);
 
   ///////STYLE LOGO
-  logoImg.style.minHeight = "48px";
+  logoImg.style.height = "24px";
 
   //////STYLE THE LOGIN/SIGN UP TABS
   signUpSignInContainer.style.display = "flex";
@@ -895,6 +905,8 @@ function desktopSignUpPageStyling() {
 function desktopCurriculumPageNoCertificateStyling() {
   const courseDescription = skilljarCourse.short_description;
 
+  const logoImg = document.querySelector(".header-center-img");
+
   //HEADER VARIABLES
   const headingParagraph = document.querySelector(".sj-heading-paragraph");
   const headingFloaterText = document.querySelector(".sj-floater-text");
@@ -942,6 +954,9 @@ function desktopCurriculumPageNoCertificateStyling() {
   const curriculumItemsListLIVE = curriculumParentContainer.childNodes;
   const curriculumOutsideContainer =
     curriculumParentContainer.closest(".content");
+
+  ///////STYLE LOGO
+  logoImg.style.height = "24px";
 
   //TEST
   if (initialLoadComplete) {
@@ -1203,6 +1218,8 @@ function desktopCurriculumPageYesCertificationStyling() {
   const courseDescription = skilljarCourse.short_description;
   console.log("courseDescription: ", courseDescription);
 
+  const logoImg = document.querySelector(".header-center-img");
+
   //HEADER VARIABLES
   const headingParagraph = document.querySelector(".sj-heading-paragraph");
   const headingFloaterText = document.querySelector(".sj-floater-text");
@@ -1245,6 +1262,9 @@ function desktopCurriculumPageYesCertificationStyling() {
   const tabsContainer = document.querySelector(".section-container.tabs");
   let [curriculumSection, aboutSection] =
     tabsContainer.querySelectorAll("section");
+
+  ///////STYLE LOGO
+  logoImg.style.height = "24px";
 
   //TEST
   if (initialLoadComplete) {
