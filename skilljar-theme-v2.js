@@ -47,7 +47,7 @@ function makeContentVisible() {
 }
 
 function insertFooter(isLessonsPage = false) {
-  const footerEl = document.getElementById("footer-background-wrapper");
+  const footerEl = document.getElementById("footer-container");
   let contentContainer;
 
   if (isLessonsPage) {
@@ -344,7 +344,7 @@ function desktopLessonPageStyling() {
   const codeBlocks = lessonContentContainer.querySelectorAll("pre");
 
   //FOOTER VARS
-  const footerContainer = document.getElementById("footer-background-wrapper");
+  const footerContainer = document.getElementById("footer-container");
   const footerCols = footerContainer.querySelectorAll(".global-footer-column");
 
   ///////STYLE LOGO
@@ -619,7 +619,7 @@ function desktopLoginPageStyling() {
   const loginForm = document.getElementById("login_form");
 
   //FOOTER VARS
-  const footerContainer = document.getElementById("footer-background-wrapper");
+  const footerContainer = document.getElementById("footer-container");
   const footerCols = footerContainer.querySelectorAll(".global-footer-column");
 
   ///////STYLE LOGO
@@ -766,7 +766,7 @@ function desktopSignUpPageStyling() {
   const signUpForm = document.getElementById("signup_form");
 
   //FOOTER VARS
-  const footerContainer = document.getElementById("footer-background-wrapper");
+  const footerContainer = document.getElementById("footer-container");
   const footerCols = footerContainer.querySelectorAll(".global-footer-column");
 
   termsAndServicesText.style.maxWidth = "368px";
@@ -1554,7 +1554,7 @@ function mobileLoginPageStyling() {
   const loginForm = document.getElementById("login_form");
 
   //FOOTER VARS
-  const footerContainer = document.getElementById("footer-background-wrapper");
+  const footerContainer = document.getElementById("footer-container");
   const footerCols = footerContainer.querySelectorAll(".global-footer-column");
 
   //NAV STYLING
@@ -1690,7 +1690,7 @@ function mobileSignUpPageStyling() {
   const signUpForm = document.getElementById("signup_form");
 
   //FOOTER VARS
-  const footerContainer = document.getElementById("footer-background-wrapper");
+  const footerContainer = document.getElementById("footer-container");
   const footerCols = footerContainer.querySelectorAll(".global-footer-column");
 
   termsAndServicesText.style.maxWidth = "368px";
@@ -1875,7 +1875,7 @@ function mobileCourseDetailsPageStyling() {
   );
 
   //FOOTER VARS
-  const footerContainer = document.getElementById("footer-background-wrapper");
+  const footerContainer = document.getElementById("footer-container");
   const footerCols = footerContainer.querySelectorAll(".global-footer-column");
 
   backToCatalogBtn.style.display = "none";
@@ -2149,7 +2149,7 @@ function mobileCurriculumPageNoCertificateStyling() {
   );
 
   //FOOTER VARS
-  const footerContainer = document.getElementById("footer-background-wrapper");
+  const footerContainer = document.getElementById("footer-container");
   const footerCols = footerContainer.querySelectorAll(".global-footer-column");
 
   //NAV STYLING
@@ -2459,7 +2459,7 @@ function mobileCurriculumPageYesCertificateStyling() {
   );
 
   //FOOTER VARS
-  const footerContainer = document.getElementById("footer-background-wrapper");
+  const footerContainer = document.getElementById("footer-container");
   const footerCols = footerContainer.querySelectorAll(".global-footer-column");
 
   //NAV STYLING
@@ -2729,7 +2729,7 @@ function mobileLessonPageStyling() {
   const codeBlocks = lessonContentContainer.querySelectorAll("pre");
 
   //FOOTER VARS
-  const footerContainer = document.getElementById("footer-background-wrapper");
+  const footerContainer = document.getElementById("footer-container");
   const footerCols = footerContainer.querySelectorAll(".global-footer-column");
 
   //MAIN NAV STYLING
@@ -2806,7 +2806,7 @@ function mobileLessonPageStyling() {
   //SECOND PAGE OF STYLING INSTRUCTIONS FROM 1ST VERSION
   const parentEl = document.querySelector(".sj-page-lesson");
   // const footerContainer = document.getElementById(
-  //   "footer-background-wrapper"
+  //   "footer-container"
   // );
 
   footerContainer.style.marginTop = "0";
