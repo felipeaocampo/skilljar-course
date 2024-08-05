@@ -17,7 +17,7 @@ body {
 /* END make header gradient color */
 
 #header .header-center-img.header-logo-svg {
-  height: 29px !important;
+  width: 230px !important;
 }
 
 /* START change sign in button outline and text color */
