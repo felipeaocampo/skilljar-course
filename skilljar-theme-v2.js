@@ -416,7 +416,7 @@ function desktopLessonPageStyling() {
   //SECOND PAGE OF STYLING INSTRUCTIONS FROM 1ST VERSION
   const parentEl = document.querySelector(".sj-page-lesson");
 
-  footerContainer.style.marginTop = "0";
+  footerContainer.style.marginTop = "60px";
 
   const openIcon = document.querySelector(".fa.fa-bars");
   const searchIcon = document.querySelector(".fa.fa-search");
