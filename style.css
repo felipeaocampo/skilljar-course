@@ -5,9 +5,9 @@
 }
 
 body {
-  visibility: hidden !important;
+  /* visibility: hidden !important;
   opacity: 0 !important;
-  transition: opacity 0.5s;
+  transition: opacity 0.5s; */
 }
 /* START make header gradient color */
 #header {
