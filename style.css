@@ -150,6 +150,15 @@ label {
 
 /* BANNER W/ BACKGROUND END*/
 
+/* COURSE CATALOG PAGE STYLING START */
+
+.no-catalog-filters .catalog-center-width, .catalog-filters .catalog-center-width {
+  width: 100% !important;
+  min-height: none !important;
+}
+
+/* COURSE CATALOG PAGE STYLING END */
+
 /* LOGIN/SIGN UP BTNS STYLE START*/
 
 #button-sign-in,
