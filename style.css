@@ -152,9 +152,9 @@ label {
 
 /* COURSE CATALOG PAGE STYLING START */
 
-.no-catalog-filters .catalog-center-width, .catalog-filters .catalog-center-width {
+.sj-page-catalog .no-catalog-filters .catalog-center-width, .catalog-filters .catalog-center-width {
   width: 100% !important;
-  min-height: none !important;
+  min-height: auto !important;
 }
 
 /* COURSE CATALOG PAGE STYLING END */
