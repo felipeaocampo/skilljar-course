@@ -158,6 +158,10 @@ label {
   padding: 0;
 }
 
+#catalog-content #catalog-courses {
+  max-width: 1232px;
+}
+
 /* COURSE CATALOG PAGE STYLING END */
 
 /* LOGIN/SIGN UP BTNS STYLE START*/
