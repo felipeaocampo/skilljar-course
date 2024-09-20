@@ -88,6 +88,7 @@ function desktopCatalogPageStyling() {
   const allCoursesHeader = document.createElement("h2");
   allCoursesHeader.textContent = "All Courses";
   allCoursesHeader.style.fontSize = "48px";
+  allCoursesHeader.style.marginBottom = "38px";
 
   catalogContentContainer.append(allCoursesHeader, catalogContainer);
   catalogBodyParentContainer.append(catalogContentContainer);
