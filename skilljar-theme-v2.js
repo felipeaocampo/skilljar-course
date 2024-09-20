@@ -76,16 +76,21 @@ function removeSJFooter(isLessonsPage = false) {
 //DESTOP VIEW STYLINGS
 function desktopCatalogPageStyling() {
   //grab variables
-  const catalogContainer = document.getElementById('catalog-courses');
+  const catalogBodyParentContainer = document.getElementById("catalog-content");
+  const catalogContainer = document.getElementById("catalog-courses");
 
   //create container div for courses catalog list
-  const catalogContentContainer = document.createElement('div');
-  catalogContainer.style.marginTop = '96px';
+  const catalogContentContainer = document.createElement("div");
+  catalogContentContainer.style.marginTop = "96px";
+  catalogContentContainer.style.maxWidth = "1232px";
+  catalogContentContainer.style.margin = "auto";
+
   //create header for list
-  const allCoursesHeader = document.createElement('h2');
-  allCoursesHeader.textContent = 'All Courses'
-  
-  catalogContainer.append(allCoursesHeader, catalogContainer);
+  const allCoursesHeader = document.createElement("h2");
+  catalogContentContainer.textContent = "All Courses";
+
+  catalogContentContainer.append(allCoursesHeader, catalogContainer);
+  catalogBodyParentContainer.append(catalogContentContainer);
 }
 
 function desktopCourseDetailsPageStyling() {

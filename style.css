@@ -160,9 +160,7 @@ label {
 }
 
 #catalog-content #catalog-courses {
-  max-width: 1232px;
   justify-content: start;
-  margin: auto;
 }
 
 /* COURSE CATALOG PAGE STYLING END */
