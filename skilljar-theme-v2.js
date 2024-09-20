@@ -76,8 +76,16 @@ function removeSJFooter(isLessonsPage = false) {
 //DESTOP VIEW STYLINGS
 function desktopCatalogPageStyling() {
   //grab variables
+  const catalogContainer = document.getElementById('catalog-courses');
 
-  //style
+  //create container div for courses catalog list
+  const catalogContentContainer = document.createElement('div');
+  catalogContainer.style.marginTop = '96px';
+  //create header for list
+  const allCoursesHeader = document.createElement('h2');
+  allCoursesHeader.textContent = 'All Courses'
+  
+  catalogContainer.append(allCoursesHeader, catalogContainer);
 }
 
 function desktopCourseDetailsPageStyling() {
