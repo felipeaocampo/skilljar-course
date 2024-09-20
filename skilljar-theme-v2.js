@@ -3042,7 +3042,7 @@ function handlePageStyling(
       ? desktopLessonPageStyling()
       : mobileLessonPageStyling();
   } else if (isCatalogPage) {
-    desktopCatalogPageStyling();
+    currentView === "desktop" ? desktopCatalogPageStyling() : null;
   }
 }
 
