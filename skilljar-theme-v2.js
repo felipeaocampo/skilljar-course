@@ -87,7 +87,7 @@ function desktopCatalogPageStyling() {
 
   //create header for list
   const allCoursesHeader = document.createElement("h2");
-  catalogContentContainer.textContent = "All Courses";
+  allCoursesHeader.textContent = "All Courses";
 
   catalogContentContainer.append(allCoursesHeader, catalogContainer);
   catalogBodyParentContainer.append(catalogContentContainer);
