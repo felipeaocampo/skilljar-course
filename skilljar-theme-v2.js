@@ -82,7 +82,7 @@ function desktopCatalogPageStyling() {
   if (!initialLoadComplete) {
     //create container div for courses catalog list
     const catalogContentContainer = document.createElement("div");
-    catalogContentContainer.style.maxWidth = "1232px";
+    catalogContentContainer.style.maxWidth = "min(1232px, 90%)";
     catalogContentContainer.style.margin = "96px auto";
 
     //create header for list
