@@ -152,7 +152,8 @@ label {
 
 /* COURSE CATALOG PAGE STYLING START */
 
-.sj-page-catalog .no-catalog-filters .catalog-center-width, .catalog-filters .catalog-center-width {
+.sj-page-catalog .no-catalog-filters .catalog-center-width,
+.catalog-filters .catalog-center-width {
   width: 100% !important;
   min-height: auto !important;
   padding: 0;
@@ -160,6 +161,8 @@ label {
 
 #catalog-content #catalog-courses {
   max-width: 1232px;
+  justify-content: start;
+  margin: auto;
 }
 
 /* COURSE CATALOG PAGE STYLING END */
