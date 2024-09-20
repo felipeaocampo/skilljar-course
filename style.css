@@ -155,6 +155,7 @@ label {
 .sj-page-catalog .no-catalog-filters .catalog-center-width, .catalog-filters .catalog-center-width {
   width: 100% !important;
   min-height: auto !important;
+  padding: 0;
 }
 
 /* COURSE CATALOG PAGE STYLING END */

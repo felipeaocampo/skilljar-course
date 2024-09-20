@@ -1,5 +1,6 @@
 let currentView = "";
-let isCurriculumPage,
+let isCatalogPage,
+  isCurriculumPage,
   isCourseDetailsPage,
   isLessonsPage,
   isLoginPage,
@@ -16,7 +17,8 @@ function checkWindowWidth() {
 }
 
 function getCurrentPage() {
-  //DONT UNDERSTAND WHY THIS FUNCTION DOESNT RETURN ANYTHING?
+  //THIS FUNCTION SEEMS TO JUST REWRITE THE GLOBAL VARS
+  isCatalogPage = document.querySelector(".sj-page-catalog") ? true : false;
   isCurriculumPage = document.querySelector(".sj-page-curriculum")
     ? true
     : false;
@@ -72,6 +74,12 @@ function removeSJFooter(isLessonsPage = false) {
 }
 
 //DESTOP VIEW STYLINGS
+function desktopCatalogPageStyling() {
+  //grab variables
+
+  //style
+}
+
 function desktopCourseDetailsPageStyling() {
   const headerContainer = document.querySelector(
     ".top-row-grey.top-row-white-v2.padding-top.padding-side.row-v2"
