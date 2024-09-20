@@ -81,13 +81,13 @@ function desktopCatalogPageStyling() {
 
   //create container div for courses catalog list
   const catalogContentContainer = document.createElement("div");
-  catalogContentContainer.style.marginTop = "96px";
   catalogContentContainer.style.maxWidth = "1232px";
-  catalogContentContainer.style.margin = "auto";
+  catalogContentContainer.style.margin = "96px auto";
 
   //create header for list
   const allCoursesHeader = document.createElement("h2");
   allCoursesHeader.textContent = "All Courses";
+  allCoursesHeader.style.fontSize = "48px";
 
   catalogContentContainer.append(allCoursesHeader, catalogContainer);
   catalogBodyParentContainer.append(catalogContentContainer);
