@@ -2,6 +2,7 @@ let currentView = "";
 let isCatalogPage,
   isCurriculumPage,
   isCourseDetailsPage,
+  isPageDetailPath,
   isLessonsPage,
   isLoginPage,
   isSignUpPage;
@@ -23,6 +24,9 @@ function getCurrentPage() {
     ? true
     : false;
   isCourseDetailsPage = document.querySelector(".sj-page-detail")
+    ? true
+    : false;
+  isPageDetailPath = document.querySelector(".sj-page-detail-path")
     ? true
     : false;
   isLessonsPage = document.querySelector(".sj-page-lesson") ? true : false;
@@ -3006,7 +3010,9 @@ function mobileLessonPageStyling() {
 
 function handlePageStyling(
   {
+    isCatalogPage,
     isCourseDetailsPage,
+    isPageDetailPath,
     isLoginPage,
     isSignUpPage,
     isCurriculumPage,
@@ -3014,7 +3020,7 @@ function handlePageStyling(
   },
   currentView
 ) {
-  if (isCourseDetailsPage) {
+  if (isCourseDetailsPage && !isPageDetailPath) {
     currentView === "desktop"
       ? desktopCourseDetailsPageStyling()
       : mobileCourseDetailsPageStyling();
@@ -3061,6 +3067,7 @@ function renderCourse() {
       {
         isCatalogPage,
         isCourseDetailsPage,
+        isPageDetailPath,
         isLoginPage,
         isSignUpPage,
         isCurriculumPage,
@@ -3075,6 +3082,7 @@ function renderCourse() {
       {
         isCatalogPage,
         isCourseDetailsPage,
+        isPageDetailPath,
         isLoginPage,
         isSignUpPage,
         isCurriculumPage,
