@@ -344,6 +344,248 @@ function desktopCourseDetailsPageStyling() {
   }
 }
 
+function desktopPathCourseDetailsPageStyling() {
+  const headerContainer = document.querySelector(
+    ".top-row-grey.top-row-white-v2.padding-top.padding-side.row-v2"
+  );
+  const headerFlexContainer = document.querySelector(".row.dp-row-flex-v2");
+  const headingFloaterText = document.querySelector(".sj-floater-text");
+  const mainHeading = document.querySelector(".break-word");
+  const registerBtn = document.getElementById("purchase-button-wrapper-large");
+  const mainHeadingContainer = document.querySelector(
+    ".columns.text-center.large-6.dp-summary-wrapper.text-left-v2"
+  );
+  const mainVideoContainer = document.querySelector(
+    ".columns.large-6.text-center.dp-promo-image-wrapper"
+  );
+  const backToCatalogBtn = document.querySelector(".back-to-catalog");
+  const videoContainer = document.querySelector(".video-max");
+  const mainInfoCardContained = document.querySelector(
+    ".sj-course-info-wrapper"
+  );
+  const headingParagraph = mainInfoCardContained.querySelector("h2");
+
+  //SIGN IN VARIABLES (WHEN USER NOT LOGGED IN)
+  const signInHeaderText = document.querySelector(".signin");
+  const signInBtn = document.querySelector(
+    ".header-link.login-link.sj-text-sign-in.focus-link-v2"
+  );
+  ////BODY VARIABLES
+  const bodyContainer = document.getElementById("dp-details");
+  const mobileBodyContent = document.querySelector(".row.show-for-small");
+  const secondaryBodyContainer = document.querySelector(
+    ".row.hide-for-small.padded-side-bottom"
+  );
+  const bodyColumns = secondaryBodyContainer.querySelectorAll(".columns");
+  const curriculumListContainer = document.querySelector(".dp-curriculum"); //NOTE: THERE ARE 2 DP-CURRICULUMS. ONE IS DESKTOP AND OTHER IS FOR MOBILE (STILL TABED)!
+  const curriculumListHeader = curriculumListContainer
+    .closest(".sj-curriculum-wrapper")
+    .querySelector("h3");
+  const curriculumList = curriculumListContainer.querySelectorAll("li");
+
+  ////CARD VARIABLES
+  const courseDetailCardContainer = secondaryBodyContainer.querySelector(
+    ".course-details-card"
+  );
+  let courseDetailCardListItems;
+  if (courseDetailCardContainer) {
+    courseDetailCardListItems =
+      courseDetailCardContainer.querySelectorAll("li");
+  }
+  const checkboxIcon = document.querySelector(".checkbox-icon");
+  const registerBtnLink = document
+    .getElementById("purchase-button")
+    .getAttribute("href");
+  const registerBtnText = document.querySelector(
+    ".purchase-button-full-text"
+  ).textContent;
+  const courseDetailsCardLink = document.querySelector(
+    ".course-details-card-link"
+  );
+
+  // backToCatalogBtn.style.display = "none";
+  // mobileBodyContent.style.display = "none";
+  // if (signInHeaderText) {
+  //   signInHeaderText.style.display = "none";
+  //   signInBtn.style.backgroundColor = "transparent";
+  //   signInBtn.style.padding = "8px 12px";
+  //   signInBtn.style.marginRight = "24px";
+  //   signInBtn.style.borderColor = "#3443F4";
+  //   signInBtn.style.border = "2px solid #3443F4";
+  //   signInBtn.style.borderRadius = "999px";
+  //   signInBtn.style.fontSize = "14px";
+  //   signInBtn.style.fontFamily = "Space Mono";
+  //   signInBtn.style.fontWeight = "700";
+  //   signInBtn.style.lineHeight = "20px";
+  // }
+
+  // headerContainer.style.backgroundColor = "#D0CFEE";
+  // headerContainer.style.margin = "0";
+  // headerContainer.style.maxWidth = "none";
+  // headerContainer.style.paddingTop = "96px";
+  // headerContainer.style.paddingBottom = "96px";
+  // headerContainer.style.border = "0";
+  // headerFlexContainer.style.flexDirection = "row-reverse";
+  // headerFlexContainer.style.flexWrap = "nowrap";
+  // headerFlexContainer.style.justifyContent = "start";
+  // headerFlexContainer.style.gap = "24px";
+  // headerFlexContainer.style.maxWidth = "1188px";
+
+  // //RENDERING OF COURSE DETAILS PAGE TEXT HEADING ON LEFT
+  // mainHeadingContainer.style.border = "0";
+  // mainHeadingContainer.style.maxWidth = "564px";
+  // mainInfoCardContained.style.display = "none";
+  // headingFloaterText.style.display = "block";
+  // headingFloaterText.style.marginBottom = "24px";
+  // mainHeading.style.margin = "0 0 12px 0";
+  // mainHeading.style.fontSize = "36px";
+  // mainHeading.style.fontWeight = "600";
+  // mainHeading.style.lineHeight = "43.2px";
+  // mainHeading.style.letterSpacing = "-.02em";
+  // headingParagraph.style.display = "block";
+  // headingParagraph.style.margin = "0 0 24px 0";
+  // mainHeadingContainer.append(
+  //   headingFloaterText,
+  //   mainHeading,
+  //   headingParagraph,
+  //   registerBtn
+  // );
+
+  // //VIDEO STYLING
+  // if (videoContainer && videoContainer.style) {
+  //   videoContainer.style.maxWidth = "none";
+  // }
+
+  // //COURSE DETAILS PAGE BODY STYLING
+  // bodyContainer.style.padding = "0";
+  // bodyContainer.style.margin = "96px auto 46px auto";
+  // bodyContainer.style.maxWidth = "min(1152px, 90%)";
+  // bodyContainer.style.display = "grid";
+  // bodyContainer.style.gridTemplateColumns =
+  //   "minmax(100px, 760px) minmax(100px, 368px)";
+  // bodyContainer.style.columnGap = "24px";
+
+  // secondaryBodyContainer.style.padding = "0";
+  // secondaryBodyContainer.style.maxWidth = "760px";
+  // bodyColumns.forEach((column) => {
+  //   column.style.float = "none";
+  //   column.style.padding = "0";
+  //   column.style.width = "100%";
+  //   column.style.display = "block";
+
+  //   column.querySelector("h3").style.fontWeight = "600";
+
+  //   if (column.classList.contains("large-7")) {
+  //     column.style.marginBottom = "48px";
+  //   }
+
+  //   const innerCol = column.querySelector(".dp-curriculum");
+  //   if (innerCol) {
+  //     innerCol.style.margin = "0";
+  //   }
+  // });
+
+  // //COURSE DETAILS CURRICULUM STYLING
+  // if (!initialLoadComplete) {
+  //   let groupIsOpen = false;
+  //   let curContainer = document.createElement("li");
+  //   styleGroupContainer(curContainer);
+
+  //   const startingGroup = document.createElement("div");
+  //   styleGroupHeading(startingGroup);
+  //   curContainer.append(startingGroup);
+
+  //   function styleGroupContainer(container) {
+  //     container.style.border = "2px solid #3443F4";
+  //     container.style.borderRadius = "8px";
+  //     container.style.marginBottom = "48px";
+  //     container.style.padding = "0";
+  //   }
+
+  //   function styleListItem(lessonItem, isLastChild) {
+  //     //display none for icon w/ class 'type-icon'
+  //     const icon = lessonItem.querySelector(".type-icon");
+  //     icon.style.display = "none";
+
+  //     const lessonItemText = lessonItem.querySelector(".lesson-wrapper");
+  //     lessonItemText.style.padding = "24px";
+  //     lessonItemText.style.fontSize = "16px";
+  //     lessonItemText.style.fontWeight = "400";
+  //     lessonItemText.style.lineHeight = "150%";
+
+  //     if (!isLastChild) {
+  //       lessonItemText.style.borderBottom = "2px solid #3443F4";
+  //     }
+  //   }
+
+  //   function styleGroupHeading(groupHeading) {
+  //     // console.log('groupHeading: ', groupHeading)
+  //     groupHeading.textContent =
+  //       groupHeading?.textContent?.trim() === ""
+  //         ? "Introduction"
+  //         : groupHeading?.textContent?.trim();
+  //     groupHeading.style.fontSize = "16px";
+  //     groupHeading.style.fontWeight = "500";
+  //     groupHeading.style.lineHeight = "125%";
+  //     //   groupHeading.style.letterSpacing = "-.16px";
+  //     groupHeading.style.fontFamily = "Fusiona";
+  //     groupHeading.style.padding = "24px";
+  //     groupHeading.style.borderBottom = "2px solid #3443F4";
+  //     curContainer.append(groupHeading);
+  //   }
+
+  //   curriculumList.forEach((curListItem, i, arr) => {
+  //     //first check if current item contains 'section' class
+  //     if (curListItem.classList.contains("section")) {
+  //       //Yes? push curContainer into curriculumListContainer
+  //       curriculumListContainer.append(curContainer);
+  //       //reset curContainer while pushing current 'section' in there for the next iteration
+  //       curContainer = document.createElement("li");
+  //       styleGroupContainer(curContainer);
+  //       const newGroupHeading = document.createElement("div");
+  //       newGroupHeading.innerHTML = curListItem.innerHTML;
+  //       styleGroupHeading(newGroupHeading);
+  //       curContainer.append(newGroupHeading);
+  //     } else {
+  //       // else, normal/expected behaviour
+  //       //transfer inner html of current list item to new created div
+  //       const newListItem = document.createElement("div");
+  //       newListItem.innerHTML = curListItem.innerHTML;
+  //       styleListItem(
+  //         newListItem,
+  //         arr[i + 1] ? arr[i + 1].classList.contains("section") : true
+  //       );
+  //       curContainer.append(newListItem);
+  //     }
+  //     curListItem.style.display = "none";
+  //   });
+
+  //   //LAST, unpushed SECTION; push it out to curriculumListContainer
+  //   curriculumListContainer.append(curContainer);
+
+  //   curriculumListHeader.style.display = "none";
+  //   curriculumListContainer.style.padding = "0";
+  // }
+
+  // //COURSE DETAILS GRID STRUCTURE STYLING - ADDING DETAILS CARD ON RIGHT SIDE
+  // if (courseDetailCardContainer) {
+  //   bodyContainer.append(courseDetailCardContainer);
+  //   courseDetailCardContainer.style.margin = "0 0 46px 0";
+  //   courseDetailCardContainer.style.justifySelf = "center";
+  //   courseDetailCardListItems.forEach((li) => {
+  //     const iconClone = checkboxIcon.cloneNode(true);
+  //     iconClone.style.display = "block";
+  //     iconClone.style.flexShrink = "0";
+  //     li.prepend(iconClone);
+  //   });
+  // }
+
+  // if (courseDetailsCardLink) {
+  //   courseDetailsCardLink.textContent = registerBtnText;
+  //   courseDetailsCardLink.setAttribute("href", registerBtnLink);
+  // }
+}
+
 function desktopLessonPageStyling() {
   const logoImg = document.querySelector(".header-center-img");
 
@@ -3024,6 +3266,8 @@ function handlePageStyling(
     currentView === "desktop"
       ? desktopCourseDetailsPageStyling()
       : mobileCourseDetailsPageStyling();
+  } else if (isCourseDetailsPage && isPageDetailPath) {
+    currentView === "desktop" ? desktopPathCourseDetailsPageStyling() : null;
   } else if (isLoginPage) {
     currentView === "desktop"
       ? desktopLoginPageStyling()
