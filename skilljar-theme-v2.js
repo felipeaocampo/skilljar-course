@@ -460,10 +460,10 @@ function desktopPathCourseDetailsPageStyling() {
   bodyContainer.style.padding = "0";
   bodyContainer.style.margin = "96px auto 46px auto";
   bodyContainer.style.maxWidth = "min(1152px, 90%)";
-  bodyContainer.style.display = "grid";
-  bodyContainer.style.gridTemplateColumns =
-    "minmax(100px, 760px) minmax(100px, 368px)";
-  bodyContainer.style.columnGap = "24px";
+  // bodyContainer.style.display = "grid";
+  // bodyContainer.style.gridTemplateColumns =
+  //   "minmax(100px, 760px) minmax(100px, 368px)";
+  // bodyContainer.style.columnGap = "24px";
 
   // secondaryBodyContainer.style.padding = "0";
   // secondaryBodyContainer.style.maxWidth = "760px";
