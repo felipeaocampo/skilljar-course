@@ -353,7 +353,7 @@ function desktopPathCourseDetailsPageStyling() {
   const mainHeading = document.querySelector(".break-word");
   const registerBtn = document.getElementById("purchase-button-wrapper-large");
   const mainHeadingContainer = document.querySelector(
-    "columns.text-center.push-3.large-6.dp-summary-wrapper"
+    ".columns.text-center.push-3.large-6.dp-summary-wrapper"
   );
   // const mainVideoContainer = document.querySelector(
   //   ".columns.large-6.text-center.dp-promo-image-wrapper"
