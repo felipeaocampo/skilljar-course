@@ -373,6 +373,8 @@ function desktopPathCourseDetailsPageStyling() {
   );
   ////BODY VARIABLES
   const bodyContainer = document.getElementById("dp-details-bundle");
+  const catalogContainer = document.getElementById("catalog-courses");
+
   // const mobileBodyContent = document.querySelector(".row.show-for-small");
   // const secondaryBodyContainer = document.querySelector(
   //   ".row.hide-for-small.padded-side-bottom"
@@ -420,7 +422,6 @@ function desktopPathCourseDetailsPageStyling() {
     signInBtn.style.lineHeight = "20px";
   }
 
-  // HERE //
   // headerContainer.style.backgroundColor = "#D0CFEE";
   headerContainer.style.background =
     "url(https://images.ctfassets.net/l47ir7rfykkn/5zE7elBMFe1MmuhPIeWd9G/e09a10e4d4c081b9ca86a879b6984049/Main_BG.png)";
@@ -472,6 +473,7 @@ function desktopPathCourseDetailsPageStyling() {
   bodyContainer.style.padding = "0";
   bodyContainer.style.margin = "96px auto 46px auto";
   bodyContainer.style.maxWidth = "min(1152px, 90%)";
+  catalogContainer.style.marginBottom = "85px";
   // bodyContainer.style.display = "grid";
   // bodyContainer.style.gridTemplateColumns =
   //   "minmax(100px, 760px) minmax(100px, 368px)";
