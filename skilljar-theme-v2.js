@@ -373,25 +373,25 @@ function desktopPathCourseDetailsPageStyling() {
   ////BODY VARIABLES
   const bodyContainer = document.getElementById("dp-details");
   const mobileBodyContent = document.querySelector(".row.show-for-small");
-  const secondaryBodyContainer = document.querySelector(
-    ".row.hide-for-small.padded-side-bottom"
-  );
-  const bodyColumns = secondaryBodyContainer.querySelectorAll(".columns");
-  const curriculumListContainer = document.querySelector(".dp-curriculum"); //NOTE: THERE ARE 2 DP-CURRICULUMS. ONE IS DESKTOP AND OTHER IS FOR MOBILE (STILL TABED)!
-  const curriculumListHeader = curriculumListContainer
-    .closest(".sj-curriculum-wrapper")
-    .querySelector("h3");
-  const curriculumList = curriculumListContainer.querySelectorAll("li");
+  // const secondaryBodyContainer = document.querySelector(
+  //   ".row.hide-for-small.padded-side-bottom"
+  // );
+  // const bodyColumns = secondaryBodyContainer.querySelectorAll(".columns");
+  // const curriculumListContainer = document.querySelector(".dp-curriculum"); //NOTE: THERE ARE 2 DP-CURRICULUMS. ONE IS DESKTOP AND OTHER IS FOR MOBILE (STILL TABED)!
+  // const curriculumListHeader = curriculumListContainer
+  //   .closest(".sj-curriculum-wrapper")
+    // .querySelector("h3");
+  // const curriculumList = curriculumListContainer.querySelectorAll("li");
 
   ////CARD VARIABLES
-  const courseDetailCardContainer = secondaryBodyContainer.querySelector(
-    ".course-details-card"
-  );
-  let courseDetailCardListItems;
-  if (courseDetailCardContainer) {
-    courseDetailCardListItems =
-      courseDetailCardContainer.querySelectorAll("li");
-  }
+  // const courseDetailCardContainer = secondaryBodyContainer.querySelector(
+  //   ".course-details-card"
+  // );
+  // let courseDetailCardListItems;
+  // if (courseDetailCardContainer) {
+  //   courseDetailCardListItems =
+  //     courseDetailCardContainer.querySelectorAll("li");
+  // }
   const checkboxIcon = document.querySelector(".checkbox-icon");
   const registerBtnLink = document
     .getElementById("purchase-button")
@@ -399,9 +399,9 @@ function desktopPathCourseDetailsPageStyling() {
   const registerBtnText = document.querySelector(
     ".purchase-button-full-text"
   ).textContent;
-  const courseDetailsCardLink = document.querySelector(
-    ".course-details-card-link"
-  );
+  // const courseDetailsCardLink = document.querySelector(
+  //   ".course-details-card-link"
+  // );
 
   // backToCatalogBtn.style.display = "none";
   // mobileBodyContent.style.display = "none";
@@ -584,6 +584,7 @@ function desktopPathCourseDetailsPageStyling() {
   //   courseDetailsCardLink.textContent = registerBtnText;
   //   courseDetailsCardLink.setAttribute("href", registerBtnLink);
   // }
+  console.log('reached end of path func')
 }
 
 function desktopLessonPageStyling() {
