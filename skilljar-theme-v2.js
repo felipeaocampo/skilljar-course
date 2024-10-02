@@ -352,6 +352,7 @@ function desktopPathCourseDetailsPageStyling() {
   const headingFloaterText = document.querySelector(".sj-floater-text");
   const mainHeading = document.querySelector(".break-word");
   const registerBtn = document.getElementById("purchase-button-wrapper-large");
+  const registerBtnAnchor = registerBtn.getElementById("purchase-button");
   const mainHeadingContainer = document.querySelector(
     ".columns.text-center.push-3.large-6.dp-summary-wrapper"
   );
@@ -439,17 +440,22 @@ function desktopPathCourseDetailsPageStyling() {
 
   // //RENDERING OF COURSE DETAILS PAGE TEXT HEADING ON LEFT
   mainHeadingContainer.style.border = "0";
-  mainHeadingContainer.style.maxWidth = "564px";
+  mainHeadingContainer.style.maxWidth = "600px";
   mainInfoCardContained.style.display = "none";
+  headingFloaterText.style.color = "#7AF0FE";
   headingFloaterText.style.display = "block";
   headingFloaterText.style.marginBottom = "24px";
+  mainHeading.style.color = "#fff";
   mainHeading.style.margin = "0 0 12px 0";
   mainHeading.style.fontSize = "36px";
   mainHeading.style.fontWeight = "600";
   mainHeading.style.lineHeight = "43.2px";
   mainHeading.style.letterSpacing = "-.02em";
+  headingParagraph.style.color = "#fff";
   headingParagraph.style.display = "block";
   headingParagraph.style.margin = "0 0 24px 0";
+  registerBtnAnchor.style.borderColor = "#7AF0FE";
+  registerBtnAnchor.style.color = "#fff";
   mainHeadingContainer.append(
     headingFloaterText,
     mainHeading,
