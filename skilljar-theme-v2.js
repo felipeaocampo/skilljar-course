@@ -421,11 +421,11 @@ function desktopPathCourseDetailsPageStyling() {
 
   // HERE //
   // headerContainer.style.backgroundColor = "#D0CFEE";
-  // headerContainer.style.background =
-  //   "url(https://images.ctfassets.net/l47ir7rfykkn/5zE7elBMFe1MmuhPIeWd9G/e09a10e4d4c081b9ca86a879b6984049/Main_BG.png)";
-  // headerContainer.style.backgroundSize = "cover";
-  // headerContainer.style.backgroundPosition = "center";
-  // headerContainer.style.backgroundRepeat = "no-repeat";
+  headerContainer.style.background =
+    "url(https://images.ctfassets.net/l47ir7rfykkn/5zE7elBMFe1MmuhPIeWd9G/e09a10e4d4c081b9ca86a879b6984049/Main_BG.png)";
+  headerContainer.style.backgroundSize = "cover";
+  headerContainer.style.backgroundPosition = "center";
+  headerContainer.style.backgroundRepeat = "no-repeat";
   headerContainer.style.margin = "0";
   headerContainer.style.maxWidth = "none";
   headerContainer.style.paddingTop = "96px";
