@@ -353,7 +353,7 @@ function desktopPathCourseDetailsPageStyling() {
   const mainHeading = document.querySelector(".break-word");
   const registerBtn = document.getElementById("purchase-button-wrapper-large");
   const mainHeadingContainer = document.querySelector(
-    ".columns.text-center.large-6.dp-summary-wrapper.text-left-v2"
+    "columns.text-center.push-3.large-6.dp-summary-wrapper"
   );
   // const mainVideoContainer = document.querySelector(
   //   ".columns.large-6.text-center.dp-promo-image-wrapper"
@@ -407,16 +407,16 @@ function desktopPathCourseDetailsPageStyling() {
   // mobileBodyContent.style.display = "none";
   if (signInHeaderText) {
     signInHeaderText.style.display = "none";
-      signInBtn.style.backgroundColor = "transparent";
-      signInBtn.style.padding = "8px 12px";
-      signInBtn.style.marginRight = "24px";
-      signInBtn.style.borderColor = "#3443F4";
-      signInBtn.style.border = "2px solid #3443F4";
-      signInBtn.style.borderRadius = "999px";
-      signInBtn.style.fontSize = "14px";
-      signInBtn.style.fontFamily = "Space Mono";
-      signInBtn.style.fontWeight = "700";
-      signInBtn.style.lineHeight = "20px";
+    signInBtn.style.backgroundColor = "transparent";
+    signInBtn.style.padding = "8px 12px";
+    signInBtn.style.marginRight = "24px";
+    signInBtn.style.borderColor = "#3443F4";
+    signInBtn.style.border = "2px solid #3443F4";
+    signInBtn.style.borderRadius = "999px";
+    signInBtn.style.fontSize = "14px";
+    signInBtn.style.fontFamily = "Space Mono";
+    signInBtn.style.fontWeight = "700";
+    signInBtn.style.lineHeight = "20px";
   }
 
   headerContainer.style.backgroundColor = "#D0CFEE";
