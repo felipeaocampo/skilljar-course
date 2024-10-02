@@ -139,10 +139,14 @@ label {
 }
 #skilljar-content
   .top-row-grey.top-row-white-v2.padding-side.row-v2[style="max-width: none; padding: 0px; background-color: rgb(208, 207, 238); border: 0px;"]::before {
-  background-image: url(https://images.ctfassets.net/l47ir7rfykkn/5AXuu3UCcGbbKSwpUi3Cyc/2b6832efeb18fe31608e16edb6c04064/ink_trails_bacgkround_.png);
+  /* background-image: url(https://images.ctfassets.net/l47ir7rfykkn/5AXuu3UCcGbbKSwpUi3Cyc/2b6832efeb18fe31608e16edb6c04064/ink_trails_bacgkround_.png);
   background-size: cover;
   opacity: 0.15;
-  mix-blend-mode: multiply;
+  mix-blend-mode: multiply; */
+  background: url(https://images.ctfassets.net/l47ir7rfykkn/5zE7elBMFe1MmuhPIeWd9G/e09a10e…/Main_BG.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   content: "";
   position: absolute;
   inset: 0;
