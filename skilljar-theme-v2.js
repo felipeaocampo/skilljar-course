@@ -372,7 +372,7 @@ function desktopPathCourseDetailsPageStyling() {
   );
   ////BODY VARIABLES
   const bodyContainer = document.getElementById("dp-details");
-  const mobileBodyContent = document.querySelector(".row.show-for-small");
+  // const mobileBodyContent = document.querySelector(".row.show-for-small");
   // const secondaryBodyContainer = document.querySelector(
   //   ".row.hide-for-small.padded-side-bottom"
   // );
@@ -404,7 +404,7 @@ function desktopPathCourseDetailsPageStyling() {
   // );
 
   backToCatalogBtn.style.display = "none";
-  mobileBodyContent.style.display = "none";
+  // mobileBodyContent.style.display = "none";
   if (signInHeaderText) {
     signInHeaderText.style.display = "none";
       signInBtn.style.backgroundColor = "transparent";
