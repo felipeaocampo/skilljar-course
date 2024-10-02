@@ -371,7 +371,7 @@ function desktopPathCourseDetailsPageStyling() {
     ".header-link.login-link.sj-text-sign-in.focus-link-v2"
   );
   ////BODY VARIABLES
-  const bodyContainer = document.getElementById("dp-details");
+  const bodyContainer = document.getElementById("dp-details-bundle");
   // const mobileBodyContent = document.querySelector(".row.show-for-small");
   // const secondaryBodyContainer = document.querySelector(
   //   ".row.hide-for-small.padded-side-bottom"
