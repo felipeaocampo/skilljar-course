@@ -352,7 +352,7 @@ function desktopPathCourseDetailsPageStyling() {
   const headingFloaterText = document.querySelector(".sj-floater-text");
   const mainHeading = document.querySelector(".break-word");
   const registerBtn = document.getElementById("purchase-button-wrapper-large");
-  const registerBtnAnchor = registerBtn.getElementById("purchase-button");
+  const registerBtnAnchor = document.getElementById("purchase-button");
   const mainHeadingContainer = document.querySelector(
     ".columns.text-center.push-3.large-6.dp-summary-wrapper"
   );
