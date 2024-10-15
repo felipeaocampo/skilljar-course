@@ -682,6 +682,7 @@ function desktopLessonPageStyling() {
   leftNav.style.position = "absolute";
   leftNav.style.backgroundColor = "#f9f9f9";
   leftNav.style.width = "320px";
+  leftNav.style.marginBottom = "0px";
   // leftNav.style.height = "100%";
   leftNav.style.paddingBottom = "40px";
   mainLessonContentContainer.style.height = "100vh";
