@@ -124,10 +124,7 @@ label {
     color: #7af0fe;
   }
 
-  h1 {
-    color: #fff;
-  }
-  p {
+  h1, h2, p {
     color: #fff;
   }
 
@@ -157,10 +154,7 @@ label {
     color: #7af0fe;
   }
 
-  h1 {
-    color: #fff;
-  }
-  p {
+  h1, h2, p {
     color: #fff;
   }
 
