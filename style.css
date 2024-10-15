@@ -121,16 +121,19 @@ label {
   position: relative;
 
   .sj-floater-text {
-    color: #7AF0FE;
+    color: #7af0fe;
   }
 
   h1 {
     color: #fff;
-  }  
+  }
+  p {
+    color: #fff;
+  }
 
   .button {
     color: #fff;
-    border-color: #7AF0FE;
+    border-color: #7af0fe;
   }
 }
 
@@ -151,16 +154,19 @@ label {
   position: relative;
 
   .sj-floater-text {
-    color: #7AF0FE;
+    color: #7af0fe;
   }
 
   h1 {
     color: #fff;
-  }  
+  }
+  p {
+    color: #fff;
+  }
 
   .button {
     color: #fff;
-    border-color: #7AF0FE;
+    border-color: #7af0fe;
   }
 }
 #skilljar-content
