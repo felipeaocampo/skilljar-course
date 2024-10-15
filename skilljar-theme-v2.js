@@ -684,7 +684,7 @@ function desktopLessonPageStyling() {
   leftNav.style.width = "320px";
   leftNav.style.marginBottom = "0px";
   // leftNav.style.height = "100%";
-  leftNav.style.paddingBottom = "40px";
+  // leftNav.style.paddingBottom = "40px";
   mainLessonContentContainer.style.height = "100vh";
   mainLessonContentContainer.style.overflowY = "auto";
   mainLessonContentContainer.style.paddingBottom = "0";
