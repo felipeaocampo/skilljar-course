@@ -682,7 +682,7 @@ function desktopLessonPageStyling() {
   leftNav.style.position = "absolute";
   leftNav.style.backgroundColor = "#f9f9f9";
   leftNav.style.width = "320px";
-  leftNav.style.height = "100%";
+  // leftNav.style.height = "100%";
   leftNav.style.paddingBottom = "40px";
   mainLessonContentContainer.style.height = "100vh";
   mainLessonContentContainer.style.overflowY = "auto";
@@ -703,7 +703,7 @@ function desktopLessonPageStyling() {
   //SECOND PAGE OF STYLING INSTRUCTIONS FROM 1ST VERSION
   const parentEl = document.querySelector(".sj-page-lesson");
 
-  footerContainer.style.marginTop = "60px";
+  // footerContainer.style.marginTop = "60px";
 
   const openIcon = document.querySelector(".fa.fa-bars");
   const searchIcon = document.querySelector(".fa.fa-search");
