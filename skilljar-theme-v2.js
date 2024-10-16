@@ -20,11 +20,17 @@ function checkWindowWidth() {
 
 function getCurrentPage() {
   //THIS FUNCTION SEEMS TO JUST REWRITE THE GLOBAL VARS
-  isCatalogPage = document.querySelector(".sj-page-catalog.sj-page-catalog-root") ? true : false;
+  isCatalogPage = document.querySelector(
+    ".sj-page-catalog.sj-page-catalog-root"
+  )
+    ? true
+    : false;
   isCurriculumPage = document.querySelector(".sj-page-curriculum")
     ? true
     : false;
-  isCourseDetailsPage = document.querySelector(".sj-page-detail.sj-page-detail-course")
+  isCourseDetailsPage = document.querySelector(
+    ".sj-page-detail.sj-page-detail-course"
+  )
     ? true
     : false;
   isLessonsPage = document.querySelector(".sj-page-lesson") ? true : false;
@@ -32,13 +38,16 @@ function getCurrentPage() {
   isSignUpPage = document.querySelector(".sj-page-signup") ? true : false;
 
   //PATH PAGES
-  isPageDetailPath = document.querySelector(".sj-page-detail.sj-page-detail-bundle.sj-page-detail-path")
+  isPageDetailPath = document.querySelector(
+    ".sj-page-detail.sj-page-detail-bundle.sj-page-detail-path"
+  )
     ? true
     : false;
-  isPageCatalogPath = document.querySelector(".sj-page-catalog.sj-page-series.sj-page-path")
+  isPageCatalogPath = document.querySelector(
+    ".sj-page-catalog.sj-page-series.sj-page-path"
+  )
     ? true
     : false;
-
 }
 
 function getWidthAndCurrentPage() {
@@ -607,6 +616,10 @@ function desktopPathCourseDetailsPageStyling() {
   //   courseDetailsCardLink.setAttribute("href", registerBtnLink);
   // }
   console.log("reached end of path func");
+}
+
+function desktopPathCatalogPageStyling() {
+  console.log("PATH catalog page styling");
 }
 
 function desktopLessonPageStyling() {
@@ -3293,12 +3306,12 @@ function handlePageStyling(
       : mobileCourseDetailsPageStyling();
   } else if (isPageDetailPath) {
     currentView === "desktop" ? desktopPathCourseDetailsPageStyling() : null;
+  } else if (isPageCatalogPath) {
+    currentView === "desktop" ? desktopPathCatalogPageStyling() : null;
   } else if (isLoginPage) {
     currentView === "desktop"
       ? desktopLoginPageStyling()
       : mobileLoginPageStyling();
-
-    //handleResponsiveLoginPage();
   } else if (isSignUpPage) {
     currentView === "desktop"
       ? desktopSignUpPageStyling()
