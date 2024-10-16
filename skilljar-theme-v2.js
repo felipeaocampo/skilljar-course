@@ -354,7 +354,7 @@ function desktopPathCourseDetailsPageStyling() {
   const registerBtn = document.getElementById("purchase-button-wrapper-large");
   const registerBtnAnchor = document.getElementById("purchase-button");
   const mainHeadingContainer = document.querySelector(
-    ".columns.text-center.push-3.large-6.dp-summary-wrapper"
+    ".columns.text-center.large-6.dp-summary-wrapper.text-left-v2"
   );
   // const mainVideoContainer = document.querySelector(
   //   ".columns.large-6.text-center.dp-promo-image-wrapper"
