@@ -19,7 +19,7 @@ function checkWindowWidth() {
 
 function getCurrentPage() {
   //THIS FUNCTION SEEMS TO JUST REWRITE THE GLOBAL VARS
-  isCatalogPage = document.querySelector(".sj-page-catalog") ? true : false;
+  isCatalogPage = document.querySelector(".sj-page-catalog.sj-page-catalog-root") ? true : false;
   isCurriculumPage = document.querySelector(".sj-page-curriculum")
     ? true
     : false;
