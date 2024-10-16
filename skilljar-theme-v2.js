@@ -628,7 +628,15 @@ function desktopPathCatalogPageStyling() {
   const coursesList = document
     .getElementById("catalog-courses")
     .querySelectorAll(".coursebox-container");
-  console.log("LAST COURSE IS LENG: ", coursesList[coursesList.length - 1]);
+    
+    let lastCourse;
+    
+    coursesList.forEach((course) => {
+      if (course.title === "Chainguard's Superstar Support") {
+        lastCourse = course;
+      }
+    });
+    console.log("LAST COURSE IS: ", lastCourse);
 
   //PAGE NAV STYLING
   backArrowBtn.style.display = "none";
