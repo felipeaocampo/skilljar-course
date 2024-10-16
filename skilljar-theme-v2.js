@@ -625,6 +625,11 @@ function desktopPathCatalogPageStyling() {
   const topContentContainer = mainContentContainer.querySelector(
     ".path-curriculum-resume-wrapper"
   );
+  const coursesList = document
+    .getElementById("catalog-courses")
+    .querySelectorAll(".coursebox-container");
+  console.log("LAST COURSE IS AT: ", coursesList.at(-1));
+  console.log("LAST COURSE IS LENG: ", coursesList[coursesList.length - 1]);
 
   //PAGE NAV STYLING
   backArrowBtn.style.display = "none";
