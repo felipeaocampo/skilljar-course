@@ -24,7 +24,7 @@ function getCurrentPage() {
   isCurriculumPage = document.querySelector(".sj-page-curriculum")
     ? true
     : false;
-  isCourseDetailsPage = document.querySelector(".sj-page-detail")
+  isCourseDetailsPage = document.querySelector(".sj-page-detail.sj-page-detail-course")
     ? true
     : false;
   isLessonsPage = document.querySelector(".sj-page-lesson") ? true : false;
@@ -3287,11 +3287,11 @@ function handlePageStyling(
   },
   currentView
 ) {
-  if (isCourseDetailsPage && !isPageDetailPath) {
+  if (isCourseDetailsPage) {
     currentView === "desktop"
       ? desktopCourseDetailsPageStyling()
       : mobileCourseDetailsPageStyling();
-  } else if (isCourseDetailsPage && isPageDetailPath) {
+  } else if (isPageDetailPath) {
     currentView === "desktop" ? desktopPathCourseDetailsPageStyling() : null;
   } else if (isLoginPage) {
     currentView === "desktop"
