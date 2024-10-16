@@ -620,6 +620,11 @@ function desktopPathCourseDetailsPageStyling() {
 
 function desktopPathCatalogPageStyling() {
   console.log("PATH catalog page styling");
+  const topContentContainer = document
+    .getElementById("catalog-content")
+    .querySelector(".path-curriculum-resume-wrapper");
+
+  topContentContainer.style.display = "none";
 }
 
 function desktopLessonPageStyling() {
