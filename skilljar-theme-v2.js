@@ -628,17 +628,21 @@ function desktopPathCatalogPageStyling() {
   const coursesList = document
     .getElementById("catalog-courses")
     .querySelectorAll(".coursebox-container");
-    
-    let lastCourse;
-    
-    coursesList.forEach((course) => {
-      if (course.title === "Chainguard's Superstar Support") {
-        lastCourse = course;
-      }
-    });
-    console.log("LAST COURSE IS: ", lastCourse);
 
-    lastCourse.style.setProperty('content', '', 'before');
+  let lastCourse;
+
+  coursesList.forEach((course) => {
+    if (course.title === "Chainguard's Superstar Support") {
+      lastCourse = course;
+    }
+  });
+  console.log("LAST COURSE IS: ", lastCourse);
+
+  lastCourse.style.setProperty("content", "", "before");
+  console.log("1 above line shouldve fired");
+
+  lastCourse.classList.remove("coursebox-container");
+  console.log("2 above line shouldve fired");
 
   //PAGE NAV STYLING
   backArrowBtn.style.display = "none";
