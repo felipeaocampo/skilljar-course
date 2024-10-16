@@ -3307,8 +3307,7 @@ function handlePageStyling(
   } else if (isPageDetailPath) {
     currentView === "desktop" ? desktopPathCourseDetailsPageStyling() : null;
   } else if (isPageCatalogPath) {
-    // currentView === "desktop" ? desktopPathCatalogPageStyling() : null;
-    console.log("hello world?");
+    currentView === "desktop" ? desktopPathCatalogPageStyling() : null;
   } else if (isLoginPage) {
     currentView === "desktop"
       ? desktopLoginPageStyling()
@@ -3351,6 +3350,7 @@ function renderCourse() {
         isCatalogPage,
         isCourseDetailsPage,
         isPageDetailPath,
+        isPageCatalogPath,
         isLoginPage,
         isSignUpPage,
         isCurriculumPage,
@@ -3366,6 +3366,7 @@ function renderCourse() {
         isCatalogPage,
         isCourseDetailsPage,
         isPageDetailPath,
+        isPageCatalogPath,
         isLoginPage,
         isSignUpPage,
         isCurriculumPage,
