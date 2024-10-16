@@ -620,10 +620,12 @@ function desktopPathCourseDetailsPageStyling() {
 
 function desktopPathCatalogPageStyling() {
   console.log("PATH catalog page styling");
-  const topContentContainer = document
-    .getElementById("catalog-content")
-    .querySelector(".path-curriculum-resume-wrapper");
+  const mainContentContainer = document.getElementById("catalog-content");
+  const topContentContainer = mainContentContainer.querySelector(
+    ".path-curriculum-resume-wrapper"
+  );
 
+  mainContentContainer.style.margin = "96px auto";
   topContentContainer.style.display = "none";
 }
 
