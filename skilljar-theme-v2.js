@@ -443,6 +443,7 @@ function desktopPathCourseDetailsPageStyling() {
   mainHeadingContainer.style.border = "0";
   mainHeadingContainer.style.maxWidth = "600px";
   mainInfoCardContained.style.display = "none";
+  headingFloaterText.textContent = "Learning Path";
   headingFloaterText.style.color = "#7AF0FE";
   headingFloaterText.style.display = "block";
   headingFloaterText.style.marginBottom = "24px";
