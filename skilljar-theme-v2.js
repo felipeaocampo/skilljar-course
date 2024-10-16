@@ -619,12 +619,17 @@ function desktopPathCourseDetailsPageStyling() {
 }
 
 function desktopPathCatalogPageStyling() {
-  console.log("PATH catalog page styling");
+  const backArrowBtn = document.querySelector(".back-to-catalog");
+
   const mainContentContainer = document.getElementById("catalog-content");
   const topContentContainer = mainContentContainer.querySelector(
     ".path-curriculum-resume-wrapper"
   );
 
+  //PAGE NAV STYLING
+  backArrowBtn.style.display = "none";
+
+  //MAIN CONTENT STYLING
   mainContentContainer.style.margin = "96px auto";
   topContentContainer.style.display = "none";
 }
