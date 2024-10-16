@@ -3287,11 +3287,11 @@ function handlePageStyling(
   },
   currentView
 ) {
-  if (isCourseDetailsPage) {
+  if (isCourseDetailsPage && !isPageDetailPath) {
     currentView === "desktop"
       ? desktopCourseDetailsPageStyling()
       : mobileCourseDetailsPageStyling();
-  } else if (isPageDetailPath) {
+  } else if (isCourseDetailsPage && isPageDetailPath) {
     currentView === "desktop" ? desktopPathCourseDetailsPageStyling() : null;
   } else if (isLoginPage) {
     currentView === "desktop"
