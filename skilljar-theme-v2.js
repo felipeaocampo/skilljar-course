@@ -3,6 +3,7 @@ let isCatalogPage,
   isCurriculumPage,
   isCourseDetailsPage,
   isPageDetailPath,
+  isPageCatalogPath,
   isLessonsPage,
   isLoginPage,
   isSignUpPage;
@@ -26,12 +27,18 @@ function getCurrentPage() {
   isCourseDetailsPage = document.querySelector(".sj-page-detail")
     ? true
     : false;
-  isPageDetailPath = document.querySelector(".sj-page-detail-path")
-    ? true
-    : false;
   isLessonsPage = document.querySelector(".sj-page-lesson") ? true : false;
   isLoginPage = document.querySelector(".sj-page-login") ? true : false;
   isSignUpPage = document.querySelector(".sj-page-signup") ? true : false;
+
+  //PATH PAGES
+  isPageDetailPath = document.querySelector(".sj-page-detail.sj-page-detail-bundle.sj-page-detail-path")
+    ? true
+    : false;
+  isPageCatalogPath = document.querySelector(".sj-page-catalog.sj-page-series.sj-page-path")
+    ? true
+    : false;
+
 }
 
 function getWidthAndCurrentPage() {
@@ -3272,6 +3279,7 @@ function handlePageStyling(
     isCatalogPage,
     isCourseDetailsPage,
     isPageDetailPath,
+    isPageCatalogPath,
     isLoginPage,
     isSignUpPage,
     isCurriculumPage,
@@ -3279,11 +3287,11 @@ function handlePageStyling(
   },
   currentView
 ) {
-  if (isCourseDetailsPage && !isPageDetailPath) {
+  if (isCourseDetailsPage) {
     currentView === "desktop"
       ? desktopCourseDetailsPageStyling()
       : mobileCourseDetailsPageStyling();
-  } else if (isCourseDetailsPage && isPageDetailPath) {
+  } else if (isCourseDetailsPage) {
     currentView === "desktop" ? desktopPathCourseDetailsPageStyling() : null;
   } else if (isLoginPage) {
     currentView === "desktop"
