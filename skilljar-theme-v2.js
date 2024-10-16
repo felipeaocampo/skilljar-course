@@ -3291,7 +3291,7 @@ function handlePageStyling(
     currentView === "desktop"
       ? desktopCourseDetailsPageStyling()
       : mobileCourseDetailsPageStyling();
-  } else if (isCourseDetailsPage) {
+  } else if (isPageDetailPath) {
     currentView === "desktop" ? desktopPathCourseDetailsPageStyling() : null;
   } else if (isLoginPage) {
     currentView === "desktop"
