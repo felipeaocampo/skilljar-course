@@ -198,9 +198,7 @@ label {
 /* PATH CATALOG PAGE STYLING START */
 
 .expandable-view
-  a.coursebox-container:not(
-    :last-of-type
-  )::after[title="Chainguard's Superstar Support"] {
+  a.coursebox-container[title="Chainguard's Superstar Support"]::after {
   background-color: red;
 }
 

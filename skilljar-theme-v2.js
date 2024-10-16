@@ -638,12 +638,6 @@ function desktopPathCatalogPageStyling() {
   });
   console.log("LAST COURSE IS: ", lastCourse);
 
-  lastCourse.style.setProperty("content", "", "before");
-  console.log("1 above line shouldve fired");
-
-  lastCourse.classList.remove("coursebox-container");
-  lastCourse.classList.add("coursebox-container");
-  console.log("2 above line shouldve fired");
 
   //PAGE NAV STYLING
   backArrowBtn.style.display = "none";
