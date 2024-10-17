@@ -199,7 +199,7 @@ label {
 
 .expandable-view
   a.coursebox-container[title="Chainguard's Superstar Support"]::after {
-  background-color: red;
+  content: none;
 }
 
 /* PATH CATALOG PAGE STYLING END */
