@@ -629,12 +629,14 @@ function desktopPathCatalogPageStyling() {
     .getElementById("catalog-courses")
     .querySelectorAll(".coursebox-container");
 
-  let lastCourse;
-
   coursesList.forEach((course) => {
-    if (course.title === "Chainguard's Superstar Support") {
-      lastCourse = course;
-    }
+    //Outter border
+    course.style.border = "2px solid #D0CFEE";
+    course.style.borderRadius = "20px";
+
+    //inner border
+    const innerContainer = course.querySelector(".course-overview");
+    innerContainer.style.borderTop = "2px solid #D0CFEE";
   });
   console.log("LAST COURSE IS: ", lastCourse);
 
