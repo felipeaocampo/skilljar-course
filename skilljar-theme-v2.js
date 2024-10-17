@@ -1365,8 +1365,10 @@ function desktopCurriculumPageNoCertificateStyling() {
   //      sjHeaderTextContainer.style.marginRight = '96px';
   sjHeaderTextContainer.style.border = "0";
   sjHeaderTextContainer.style.textAlign = "left";
-  resumeBtn.style.marginLeft = "0";
-  resumeBtn.style.marginRight = "0";
+  if (resumeBtn) {
+    resumeBtn.style.marginLeft = "0";
+    resumeBtn.style.marginRight = "0";
+  }
   //IMG CONTAINER
   sjHeaderImgContainer.style.position = "static";
   sjHeaderImgContainer.style.padding = "0";
