@@ -638,7 +638,6 @@ function desktopPathCatalogPageStyling() {
   });
   console.log("LAST COURSE IS: ", lastCourse);
 
-
   //PAGE NAV STYLING
   backArrowBtn.style.display = "none";
 
@@ -1273,8 +1272,11 @@ function desktopCurriculumPageNoCertificateStyling() {
   const sjHeaderImgDirectContainer = document.querySelector(".cp-promo-image");
   const sjHeaderImg = document.querySelector(".cp-promo-image img");
   const resumeBtn = document.getElementById("resume-button");
-  const btnText = resumeBtn.querySelector(".button span").textContent;
-  const btnHref = resumeBtn.querySelector(".button").getAttribute("href");
+  let btnText, btnHref;
+  if (resumeBtn) {
+    btnText = resumeBtn.querySelector(".button span").textContent;
+    btnHref = resumeBtn.querySelector(".button").getAttribute("href");
+  }
 
   //BODY VARIABLES
   const bodyMainContainer = document.getElementById("cp-content");
@@ -1320,7 +1322,7 @@ function desktopCurriculumPageNoCertificateStyling() {
     bodyMainContainer.append(courseDetailsCard);
   }
 
-  if (courseDetailsCardLink) {
+  if (courseDetailsCardLink & resumeBtn) {
     courseDetailsCardLink.textContent = btnText;
     courseDetailsCardLink.setAttribute("href", btnHref);
   }
