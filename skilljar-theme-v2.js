@@ -636,8 +636,22 @@ function desktopPathCatalogPageStyling() {
 
     //inner border
     const innerContainer = course.querySelector(".course-overview");
-    // innerContainer.style.borderTop = "2px solid #D0CFEE";
-    console.log("innerContainer: ", innerContainer);
+    if (innerContainer) {
+      innerContainer.style.borderTop = "2px solid #D0CFEE";
+      innerContainer.addEventListener("mouseover", () => {
+        innerContainer.style.borderColor = "#3443f4";
+      });
+      innerContainer.addEventListener("mouseout", () => {
+        innerContainer.style.borderColor = "#D0CFEE";
+      });
+    }
+
+    course.addEventListener("mouseover", () => {
+      course.style.borderColor = "#3443f4";
+    });
+    course.addEventListener("mouseout", () => {
+      course.style.borderColor = "#D0CFEE";
+    });
   });
 
   //PAGE NAV STYLING
