@@ -294,7 +294,7 @@ label {
   padding: 12px 20px !important;
   text-align: center !important;
   text-decoration: none !important;
-  display: inline-block !important;
+  display: inline-block;
   font-size: 16px !important;
   font-family: "Space Mono" !important;
   border-radius: 999px !important;
