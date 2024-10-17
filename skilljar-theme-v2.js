@@ -636,9 +636,9 @@ function desktopPathCatalogPageStyling() {
 
     //inner border
     const innerContainer = course.querySelector(".course-overview");
-    innerContainer.style.borderTop = "2px solid #D0CFEE";
+    // innerContainer.style.borderTop = "2px solid #D0CFEE";
+    console.log("innerContainer: ", innerContainer);
   });
-  console.log("LAST COURSE IS: ", lastCourse);
 
   //PAGE NAV STYLING
   backArrowBtn.style.display = "none";
