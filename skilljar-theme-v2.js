@@ -1336,6 +1336,10 @@ function desktopCurriculumPageNoCertificateStyling() {
   if (courseDetailsCard) {
     courseDetailsCard.style.margin = "96px 0 46px 0";
     bodyMainContainer.append(courseDetailsCard);
+
+    if (!resumeBtn) {
+      courseDetailsCardLink.style.display = "none";
+    }
   }
 
   if (courseDetailsCardLink && resumeBtn) {
@@ -1405,7 +1409,18 @@ function desktopCurriculumPageNoCertificateStyling() {
   headingParagraph.textContent = courseDescription;
   headingParagraph.style.display = "block";
   headingFloaterText.style.display = "block";
-  container.append(headingFloaterText, mainHeading, headingParagraph, btn);
+
+  if (resumeBtn) {
+    // container.append(headingFloaterText, mainHeading, headingParagraph, btn);
+    container.append(
+      headingFloaterText,
+      mainHeading,
+      headingParagraph,
+      resumeBtn
+    );
+  } else {
+    container.append(headingFloaterText, mainHeading, headingParagraph);
+  }
 
   ///////CURRICULUM PAGE BODY STYLING
   tabsContainer.append(curriculumSection);
