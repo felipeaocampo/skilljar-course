@@ -643,13 +643,13 @@ function desktopPathCatalogPageStyling() {
     course.addEventListener("mouseover", () => {
       course.style.borderColor = "#3443f4";
       if (innerContainer) {
-        course.style.borderColor = "#3443f4";
+        innerContainer.style.borderColor = "#3443f4";
       }
     });
     course.addEventListener("mouseout", () => {
       course.style.borderColor = "#D0CFEE";
       if (innerContainer) {
-        course.style.borderColor = "#D0CFEE";
+        innerContainer.style.borderColor = "#D0CFEE";
       }
     });
   });
