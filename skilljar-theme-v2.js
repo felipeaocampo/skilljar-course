@@ -1322,7 +1322,7 @@ function desktopCurriculumPageNoCertificateStyling() {
     bodyMainContainer.append(courseDetailsCard);
   }
 
-  if (courseDetailsCardLink & resumeBtn) {
+  if (courseDetailsCardLink && resumeBtn) {
     courseDetailsCardLink.textContent = btnText;
     courseDetailsCardLink.setAttribute("href", btnHref);
   }
