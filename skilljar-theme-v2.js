@@ -262,8 +262,15 @@ function desktopCourseDetailsPageStyling() {
   //COURSE DETAILS CURRICULUM STYLING
   if (!initialLoadComplete) {
     let groupIsOpen = false;
+    // Check if course has Sections/Modules/Parts
+    const hasSections = curriculumListContainer.querySelector(".section")
+      ? true
+      : false;
     let curContainer = document.createElement("li");
-    // styleGroupContainer(curContainer);
+
+    if (!hasSections) {
+      styleGroupContainer(curContainer);
+    }
 
     // const startingGroup = document.createElement("div");
     // styleGroupHeading(startingGroup);
