@@ -294,10 +294,7 @@ function desktopCourseDetailsPageStyling() {
 
     function styleGroupHeading(groupHeading) {
       // console.log('groupHeading: ', groupHeading)
-      groupHeading.textContent =
-        groupHeading?.textContent?.trim() === ""
-          ? "Introduction"
-          : groupHeading?.textContent?.trim();
+      groupHeading.textContent = groupHeading?.textContent?.trim();
       groupHeading.style.fontSize = "16px";
       groupHeading.style.fontWeight = "500";
       groupHeading.style.lineHeight = "125%";
