@@ -263,11 +263,11 @@ function desktopCourseDetailsPageStyling() {
   if (!initialLoadComplete) {
     let groupIsOpen = false;
     let curContainer = document.createElement("li");
-    styleGroupContainer(curContainer);
+    // styleGroupContainer(curContainer);
 
-    const startingGroup = document.createElement("div");
-    styleGroupHeading(startingGroup);
-    curContainer.append(startingGroup);
+    // const startingGroup = document.createElement("div");
+    // styleGroupHeading(startingGroup);
+    // curContainer.append(startingGroup);
 
     function styleGroupContainer(container) {
       container.style.border = "2px solid #3443F4";
