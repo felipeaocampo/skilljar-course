@@ -1450,11 +1450,11 @@ function desktopCurriculumPageNoCertificateStyling() {
 
     let groupIsOpen = false;
     let curContainer = document.createElement("div");
-    styleGroupContainer(curContainer);
+    // styleGroupContainer(curContainer);
 
-    const startingGroup = document.createElement("div");
-    styleGroupHeading(startingGroup);
-    curContainer.append(startingGroup);
+    // const startingGroup = document.createElement("div");
+    // styleGroupHeading(startingGroup);
+    // curContainer.append(startingGroup);
 
     function styleGroupContainer(container) {
       container.style.border = "2px solid #3443f4";
@@ -1483,10 +1483,7 @@ function desktopCurriculumPageNoCertificateStyling() {
       const groupHeading =
         groupHeadingContainer.querySelector("h3") || groupHeadingContainer;
 
-      groupHeading.textContent =
-        groupHeading?.textContent?.trim() === ""
-          ? "Introduction"
-          : groupHeading?.textContent?.trim();
+      groupHeading.textContent = groupHeading?.textContent?.trim();
       groupHeading.style.fontSize = "16px";
       groupHeading.style.fontFamily = "Fusiona";
       groupHeading.style.fontWeight = "500";
@@ -1765,11 +1762,11 @@ function desktopCurriculumPageYesCertificationStyling() {
 
     let groupIsOpen = false;
     let curContainer = document.createElement("div");
-    styleGroupContainer(curContainer);
+    // styleGroupContainer(curContainer);
 
-    const startingGroup = document.createElement("div");
-    styleGroupHeading(startingGroup);
-    curContainer.append(startingGroup);
+    // const startingGroup = document.createElement("div");
+    // styleGroupHeading(startingGroup);
+    // curContainer.append(startingGroup);
 
     function styleGroupContainer(container) {
       container.style.border = "2px solid #3443f4";
@@ -1798,10 +1795,7 @@ function desktopCurriculumPageYesCertificationStyling() {
       const groupHeading =
         groupHeadingContainer.querySelector("h3") || groupHeadingContainer;
 
-      groupHeading.textContent =
-        groupHeading?.textContent?.trim() === ""
-          ? "Introduction"
-          : groupHeading?.textContent?.trim();
+      groupHeading.textContent = groupHeading?.textContent?.trim();
       groupHeading.style.fontSize = "16px";
       groupHeading.style.fontWeight = "500";
       groupHeading.style.lineHeight = "125%";
@@ -2342,11 +2336,11 @@ function mobileCourseDetailsPageStyling() {
     console.log("initialLoadComplete:", initialLoadComplete);
     let groupIsOpen = false;
     let curContainer = document.createElement("li");
-    styleGroupContainer(curContainer);
+    // styleGroupContainer(curContainer);
 
-    const startingGroup = document.createElement("div");
-    styleGroupHeading(startingGroup);
-    curContainer.append(startingGroup);
+    // const startingGroup = document.createElement("div");
+    // styleGroupHeading(startingGroup);
+    // curContainer.append(startingGroup);
 
     function styleGroupContainer(container) {
       container.style.border = "1px solid #DCDCDC";
@@ -2373,10 +2367,7 @@ function mobileCourseDetailsPageStyling() {
 
     function styleGroupHeading(groupHeading) {
       // console.log('groupHeading: ', groupHeading)
-      groupHeading.textContent =
-        groupHeading?.textContent?.trim() === ""
-          ? "Introduction"
-          : groupHeading?.textContent?.trim();
+      groupHeading.textContent = groupHeading?.textContent?.trim();
       groupHeading.style.fontSize = "16px";
       groupHeading.style.fontWeight = "500";
       groupHeading.style.lineHeight = "125%";
@@ -2628,11 +2619,11 @@ function mobileCurriculumPageNoCertificateStyling() {
 
     let groupIsOpen = false;
     let curContainer = document.createElement("div");
-    styleGroupContainer(curContainer);
+    // styleGroupContainer(curContainer);
 
-    const startingGroup = document.createElement("div");
-    styleGroupHeading(startingGroup);
-    curContainer.append(startingGroup);
+    // const startingGroup = document.createElement("div");
+    // styleGroupHeading(startingGroup);
+    // curContainer.append(startingGroup);
 
     function styleGroupContainer(container) {
       container.style.border = "1px solid #DCDCDC";
@@ -2661,10 +2652,7 @@ function mobileCurriculumPageNoCertificateStyling() {
       const groupHeading =
         groupHeadingContainer.querySelector("h3") || groupHeadingContainer;
 
-      groupHeading.textContent =
-        groupHeading?.textContent?.trim() === ""
-          ? "Introduction"
-          : groupHeading?.textContent?.trim();
+      groupHeading.textContent = groupHeading?.textContent?.trim();
       groupHeading.style.fontSize = "16px";
       groupHeading.style.fontWeight = "500";
       groupHeading.style.lineHeight = "125%";
@@ -2938,11 +2926,11 @@ function mobileCurriculumPageYesCertificateStyling() {
 
     let groupIsOpen = false;
     let curContainer = document.createElement("div");
-    styleGroupContainer(curContainer);
+    // styleGroupContainer(curContainer);
 
-    const startingGroup = document.createElement("div");
-    styleGroupHeading(startingGroup);
-    curContainer.append(startingGroup);
+    // const startingGroup = document.createElement("div");
+    // styleGroupHeading(startingGroup);
+    // curContainer.append(startingGroup);
 
     function styleGroupContainer(container) {
       container.style.border = "1px solid #DCDCDC";
@@ -2971,10 +2959,7 @@ function mobileCurriculumPageYesCertificateStyling() {
       const groupHeading =
         groupHeadingContainer.querySelector("h3") || groupHeadingContainer;
 
-      groupHeading.textContent =
-        groupHeading?.textContent?.trim() === ""
-          ? "Introduction"
-          : groupHeading?.textContent?.trim();
+      groupHeading.textContent = groupHeading?.textContent?.trim();
       groupHeading.style.fontSize = "16px";
       groupHeading.style.fontWeight = "500";
       groupHeading.style.lineHeight = "125%";
