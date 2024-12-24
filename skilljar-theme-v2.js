@@ -1456,8 +1456,15 @@ function desktopCurriculumPageNoCertificateStyling() {
     globalAboutSection = aboutSection;
 
     let groupIsOpen = false;
+    // Check if course has Sections/Modules/Parts
+    const hasSections = curriculumParentContainer.querySelector(".section")
+      ? true
+      : false;
     let curContainer = document.createElement("div");
-    // styleGroupContainer(curContainer);
+
+    if (!hasSections) {
+      styleGroupContainer(curContainer);
+    }
 
     // const startingGroup = document.createElement("div");
     // styleGroupHeading(startingGroup);
@@ -1768,8 +1775,14 @@ function desktopCurriculumPageYesCertificationStyling() {
     globalAboutSection = aboutSection;
 
     let groupIsOpen = false;
+    const hasSections = curriculumParentContainer.querySelector(".section")
+      ? true
+      : false;
     let curContainer = document.createElement("div");
-    // styleGroupContainer(curContainer);
+
+    if (!hasSections) {
+      styleGroupContainer(curContainer);
+    }
 
     // const startingGroup = document.createElement("div");
     // styleGroupHeading(startingGroup);
@@ -2340,10 +2353,15 @@ function mobileCourseDetailsPageStyling() {
 
   //COURSE DETAILS CURRICULUM STYLING
   if (!initialLoadComplete) {
-    console.log("initialLoadComplete:", initialLoadComplete);
     let groupIsOpen = false;
+    const hasSections = curriculumListContainer.querySelector(".section")
+      ? true
+      : false;
     let curContainer = document.createElement("li");
-    // styleGroupContainer(curContainer);
+
+    if (!hasSections) {
+      styleGroupContainer(curContainer);
+    }
 
     // const startingGroup = document.createElement("div");
     // styleGroupHeading(startingGroup);
@@ -2625,8 +2643,14 @@ function mobileCurriculumPageNoCertificateStyling() {
     globalAboutSection = aboutSection;
 
     let groupIsOpen = false;
+    const hasSections = curriculumParentContainer.querySelector(".section")
+      ? true
+      : false;
     let curContainer = document.createElement("div");
-    // styleGroupContainer(curContainer);
+
+    if (!hasSections) {
+      styleGroupContainer(curContainer);
+    }
 
     // const startingGroup = document.createElement("div");
     // styleGroupHeading(startingGroup);
@@ -2932,8 +2956,14 @@ function mobileCurriculumPageYesCertificateStyling() {
     globalAboutSection = aboutSection;
 
     let groupIsOpen = false;
+    const hasSections = curriculumParentContainer.querySelector(".section")
+      ? true
+      : false;
     let curContainer = document.createElement("div");
-    // styleGroupContainer(curContainer);
+
+    if (!hasSections) {
+      styleGroupContainer(curContainer);
+    }
 
     // const startingGroup = document.createElement("div");
     // styleGroupHeading(startingGroup);
