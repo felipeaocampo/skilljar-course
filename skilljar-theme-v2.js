@@ -1457,7 +1457,7 @@ function desktopCurriculumPageNoCertificateStyling() {
 
     let groupIsOpen = false;
     // Check if course has Sections/Modules/Parts
-    const hasSections = curriculumParentContainer.querySelector(".section")
+    const hasSections = curriculumParentContainer.querySelector("h3")
       ? true
       : false;
     let curContainer = document.createElement("div");
