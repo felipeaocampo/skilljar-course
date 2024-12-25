@@ -1775,7 +1775,7 @@ function desktopCurriculumPageYesCertificationStyling() {
     globalAboutSection = aboutSection;
 
     let groupIsOpen = false;
-    const hasSections = curriculumParentContainer.querySelector(".section")
+    const hasSections = curriculumParentContainer.querySelector("h3")
       ? true
       : false;
     let curContainer = document.createElement("div");
@@ -2643,7 +2643,7 @@ function mobileCurriculumPageNoCertificateStyling() {
     globalAboutSection = aboutSection;
 
     let groupIsOpen = false;
-    const hasSections = curriculumParentContainer.querySelector(".section")
+    const hasSections = curriculumParentContainer.querySelector("h3")
       ? true
       : false;
     let curContainer = document.createElement("div");
@@ -2956,7 +2956,7 @@ function mobileCurriculumPageYesCertificateStyling() {
     globalAboutSection = aboutSection;
 
     let groupIsOpen = false;
-    const hasSections = curriculumParentContainer.querySelector(".section")
+    const hasSections = curriculumParentContainer.querySelector("h3")
       ? true
       : false;
     let curContainer = document.createElement("div");
