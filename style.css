@@ -198,7 +198,7 @@ label {
 /* PATH CATALOG PAGE STYLING START */
 
 .expandable-view
-  a.coursebox-container[title="Chainguard's Superstar Support"]::after {
+  a.coursebox-container[title="Claim your Container Crusader Credential"]::after {
   content: none;
 }
 
